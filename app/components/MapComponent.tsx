@@ -8,8 +8,9 @@ import {
   TileLayer,
   Marker,
   Tooltip,
+  useMap,
 } from 'react-leaflet';
-import { divIcon, LatLngExpression } from 'leaflet';
+import { divIcon, LatLngTuple } from 'leaflet';
 import Mascot from './Mascot'; // same folder
 
 /* --------------------------------------------------------------- */
@@ -98,7 +99,38 @@ const mascotByCategory: Record<
 };
 
 /* --------------------------------------------------------------- */
-/* 2. Component                                                   */
+/* 2. Map Controllers (Fix react-leaflet v4+)                      */
+/* --------------------------------------------------------------- */
+
+// Set center and zoom
+const MapController: React.FC<{ center: LatLngTuple }> = ({ center }) => {
+  const map = useMap();
+  useEffect(() => {
+    map.setView(center, 8);
+  }, [map, center]);
+  return null;
+};
+
+// Disable all map interactions
+const MapInteractionsController: React.FC = () => {
+  const map = useMap();
+  useEffect(() => {
+    if (!map) return;
+
+    map.dragging.disable();
+    map.touchZoom.disable();
+    map.doubleClickZoom.disable();
+    map.scrollWheelZoom.disable();
+    map.boxZoom.disable();
+    map.keyboard.disable();
+    if (map.zoomControl) map.zoomControl.remove();
+
+  }, [map]);
+  return null;
+};
+
+/* --------------------------------------------------------------- */
+/* 3. Main Component                                               */
 /* --------------------------------------------------------------- */
 export default function MapComponent() {
   const [locations, setLocations] = useState<LocationData[]>([]);
@@ -144,7 +176,6 @@ export default function MapComponent() {
   const withCoords: WithCoords[] = useMemo(() => {
     const merged = locations
       .map(l => {
-        // Always use coordinateMap - ignore position from JSON
         const c = coordinateMap[l.id];
         if (
           Array.isArray(c) &&
@@ -245,10 +276,11 @@ export default function MapComponent() {
     });
   };
 
-
-    /* --------------------------------------------------------------- */
-  /* 3. Render                                                       */
   /* --------------------------------------------------------------- */
+  /* 4. Render                                                       */
+  /* --------------------------------------------------------------- */
+  const mapCenter: LatLngTuple = [7.8731, 80.7718];
+
   return (
     <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -272,24 +304,14 @@ export default function MapComponent() {
           </p>
         </motion.div>
 
-        {/* --------------------------------------------------------------- */}
-        {/*  LAYOUT – MAP + LEGEND (centered, full Sri Lanka, crystal-clear) */}
-        {/* --------------------------------------------------------------- */}
+        {/* LAYOUT – MAP + LEGEND */}
         <div className="flex flex-col items-center gap-8">
 
-          {/* ----- MAP (square, large, full island, crystal-clear) ----- */}
+          {/* MAP (react-leaflet v4+ compliant) */}
           <div className="relative w-[800px] h-[800px] mx-auto rounded-3xl shadow-2xl border border-gray-200 overflow-hidden bg-white/90 backdrop-blur-sm ring-4 ring-emerald-500/10">
             <MapContainer
-              center={[7.8731, 80.7718] as LatLngExpression}
-              zoom={8}
               style={{ height: '100%', width: '100%' }}
-              dragging={false}
-              zoomControl={false}
-              scrollWheelZoom={false}
-              doubleClickZoom={false}
-              touchZoom={false}
-              boxZoom={false}
-              keyboard={false}
+              // No interaction props allowed
             >
               <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -297,6 +319,13 @@ export default function MapComponent() {
                 maxZoom={19}
               />
 
+              {/* Set center and zoom */}
+              <MapController center={mapCenter} />
+
+              {/* Disable all interactions */}
+              <MapInteractionsController />
+
+              {/* Markers */}
               {withCoords.map(loc => {
                 const hovered = hoveredId === loc.id;
                 return (
@@ -317,7 +346,6 @@ export default function MapComponent() {
                             <Mascot
                               name={mascotByCategory[loc.categories?.[0] ?? 'Uncategorized'].name}
                               src={mascotByCategory[loc.categories?.[0] ?? 'Uncategorized'].src}
-                              alt={mascotByCategory[loc.categories?.[0] ?? 'Uncategorized'].alt}
                               size={22}
                               animation="idle-float"
                               decorative
@@ -350,7 +378,7 @@ export default function MapComponent() {
             </MapContainer>
           </div>
 
-          {/* ----- LEGEND / FILTERS (below the map) ----- */}
+          {/* LEGEND / FILTERS */}
           <div className="w-[800px] bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
             <div className="text-lg font-medium text-gray-900 mb-4">Categories</div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
@@ -383,7 +411,7 @@ export default function MapComponent() {
           </div>
         </div>
 
-        {/* ----- MODAL ----------------------------------------------- */}
+        {/* MODAL */}
         <AnimatePresence>
           {selected && (
             <motion.div
@@ -404,7 +432,7 @@ export default function MapComponent() {
                 aria-modal="true"
                 aria-label={`${selected.name} details`}
               >
-                {/* header */}
+                {/* Header */}
                 <div className="flex items-center justify-between mb-4">
                   {(() => {
                     const cat = selected.categories?.[0] ?? 'Uncategorized';
@@ -413,7 +441,6 @@ export default function MapComponent() {
                       <Mascot
                         name={m.name}
                         src={m.src}
-                        alt={m.alt}
                         size={36}
                         animation="entrance-pop"
                         decorative
@@ -432,7 +459,7 @@ export default function MapComponent() {
                   </button>
                 </div>
 
-                {/* categories */}
+                {/* Categories */}
                 <div className="mb-4">
                   <div className="text-sm font-medium text-gray-500 mb-2">
                     Categories
@@ -453,7 +480,7 @@ export default function MapComponent() {
                   </div>
                 </div>
 
-                {/* attractions */}
+                {/* Attractions */}
                 <div className="mb-4">
                   <div className="text-sm font-medium text-gray-500 mb-2">
                     Famous Attractions
@@ -468,7 +495,7 @@ export default function MapComponent() {
                   </ul>
                 </div>
 
-                {/* nearby */}
+                {/* Nearby */}
                 {(() => {
                   const primary = selected.categories?.[0];
                   if (!primary) return null;

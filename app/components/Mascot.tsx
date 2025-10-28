@@ -16,23 +16,33 @@ interface MascotProps {
   decorative?: boolean;
 }
 
-const animationVariants: Record<Animation, object> = {
-  'idle-float': {
-    y: [0, -6, 0],
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-      ease: 'easeInOut',
-    },
-  },
-  'entrance-pop': {
-    scale: [0, 1.2, 1],
-    transition: {
-      duration: 0.4,
-      ease: 'easeOut',
-    },
-  },
-  none: {},
+const getAnimationProps = (animation: Animation) => {
+  switch (animation) {
+    case 'idle-float':
+      return {
+        animate: {
+          y: [0, -6, 0],
+        },
+        transition: {
+          duration: 2,
+          repeat: Infinity,
+          ease: 'easeInOut' as const,
+        },
+      };
+    case 'entrance-pop':
+      return {
+        initial: { scale: 0 },
+        animate: {
+          scale: [0, 1.2, 1],
+        },
+        transition: {
+          duration: 0.4,
+          ease: 'easeOut' as const,
+        },
+      };
+    default:
+      return {};
+  }
 };
 
 export default function Mascot({
@@ -45,9 +55,7 @@ export default function Mascot({
   return (
     <motion.div
       className="inline-block"
-      variants={animationVariants[animation]}
-      animate={animation !== 'none' ? animation : undefined}
-      initial={animation === 'entrance-pop' ? { scale: 0 } : false}
+      {...getAnimationProps(animation)}
       aria-hidden={decorative}
     >
       <Image

@@ -43,10 +43,11 @@ const mascotByPrimaryCategory: Record<string, { src: string; name: string; alt: 
   'Religious & Spiritual': { src: '/assets/mascots/lotus-monk.svg', name: 'Luma the Lotus Monk', alt: 'Lotus monk mascot', anim: 'entrance-pop' },
 };
 
-export default function DestinationDetail({ params }: { params: { id: string } }) {
+export default async function DestinationDetail({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
   const destination = useMemo<Destination | undefined>(() => {
-    return data.destinations.find((d: Destination) => d.id === params.id);
-  }, [params.id]);
+    return data.destinations.find((d: Destination) => d.id === id);
+  }, [id]);
 
   if (!destination) {
     return (

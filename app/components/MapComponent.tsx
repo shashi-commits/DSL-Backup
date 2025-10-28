@@ -201,21 +201,17 @@ export default function MapComponent() {
         {/* --- NEW MAP IMPLEMENTATION --- */}
         <div className="relative">
           <div className="relative mx-auto max-w-5xl h-[400px] md:h-[600px] rounded-3xl shadow-2xl border border-gray-200 overflow-hidden z-10">
-            {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
             <MapContainer 
-              {...({
-                center: [7.8731, 80.7718],
-                zoom: 8,
-                style: { height: '100%', width: '100%' },
-                scrollWheelZoom: true,
-              } as any)}
+              // @ts-expect-error - react-leaflet type mismatch with Next.js 15
+              center={[7.8731, 80.7718]}
+              zoom={8}
+              style={{ height: '100%', width: '100%' }}
+              scrollWheelZoom={true}
             >
-              {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
               <TileLayer
-                {...({
-                  url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-                  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                } as any)}
+                // @ts-expect-error - react-leaflet type mismatch with Next.js 15
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               />
 
               {/* Markers */}
@@ -234,16 +230,14 @@ export default function MapComponent() {
                 const attractions = (d.famousAttractions || []).slice(0, 3);
                 
                 return (
-                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   <Marker
                     key={d.id}
-                    {...({
-                      position: d.coordinates,
-                      icon: getCategoryIcon(cat),
-                      eventHandlers: {
-                        click: () => setSelected(d),
-                      },
-                    } as any)}
+                    // @ts-expect-error - react-leaflet type mismatch with Next.js 15
+                    position={d.coordinates}
+                    icon={getCategoryIcon(cat)}
+                    eventHandlers={{
+                      click: () => setSelected(d),
+                    }}
                   >
                     {/* This replaces the old absolute-positioned hover div */}
                     <Tooltip>

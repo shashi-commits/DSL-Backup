@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import 'leaflet/dist/leaflet.css';
 
+
 const primaryFont = Inter({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],

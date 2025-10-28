@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor">
+  <!-- Body -->
+  <ellipse cx="32" cy="36" rx="14" ry="18"/>
+  <!-- Head -->
+  <circle cx="32" cy="20" r="10"/>
+  <!-- Beak -->
+  <path d="M32 26l6 4h-12z"/>
+  <!-- Wings -->
+  <path d="M18 32c-6-4-8 4-4 8 4 4 10-2 10-6 0-4-2-6-6-2z"/>
+  <path d="M46 32c6-4 8 4 4 8-4 4-10-2-10-6 0-4 2-6 6-2z"/>
+  <!-- Lighthouse hat -->
+  <rect x="26" y="10" width="12" height="8" rx="1"/>
+  <circle cx="32" cy="14" r="3"/>
+</svg>

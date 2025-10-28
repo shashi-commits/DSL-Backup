@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor">
+  <!-- Body -->
+  <path d="M32 12c-9 0-16 6-19 14 2 3 5 5 8 5 7 0 12-5 14-11 2 6 7 11 14 11 3 0 6-2 8-5-3-8-10-14-19-14z"/>
+  <!-- Eyes -->
+  <circle cx="23" cy="29" r="4"/>
+  <circle cx="41" cy="29" r="4"/>
+  <!-- Trunk -->
+  <path d="M32 32c-2 0-4 2-4 5v10c0 3 2 5 4 5s4-2 4-5V37c0-3-2-5-4-5z"/>
+  <!-- Legs -->
+  <rect x="18" y="42" width="8" height="14" rx="2"/>
+  <rect x="38" y="42" width="8" height="14" rx="2"/>
+</svg>

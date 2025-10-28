@@ -71,7 +71,7 @@ export default async function DestinationDetail({ params }: { params: Promise<{ 
                   <span data-editor-id="app/destinations/[id]/page.tsx:82:15">{destination.name}</span>
                 </h1>
                 <div className="mt-3 inline-flex items-center gap-2 px-3 py-1 bg-white border border-gray-200 rounded-xl text-sm text-gray-700">
-                  <Icon icon="mdi:map-marker" className="text-emerald-500" />
+                  <span className="text-emerald-500">📍</span>
                   <span data-editor-id="app/destinations/[id]/page.tsx:86:15">{destination.region}</span>
                 </div>
               </div>

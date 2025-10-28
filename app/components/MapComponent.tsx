@@ -234,7 +234,7 @@ export default function MapComponent() {
                 const attractions = (d.famousAttractions || []).slice(0, 3);
                 
                 return (
-                  {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                  // eslint-disable-next-line @typescript-eslint/no-explicit-any
                   <Marker
                     key={d.id}
                     {...({

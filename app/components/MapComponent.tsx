@@ -113,7 +113,7 @@ export default function MapComponent() {
     let active = true;
     fetch('/data/sri_lanka_locations.json')
       .then((r) => r.json())
-      .then((data: any) => {
+      .then((data: unknown) => {
         if (!active) return;
         const arr = Array.isArray(data) ? (data as LocationData[]) : [];
         setLocations(arr);

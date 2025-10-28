@@ -21,6 +21,7 @@ export default function Icon() {
 
         <img data-editor-id="app/apple-icon.tsx:22:9"
       src="https://storage.googleapis.com/cosmic-project-image-assets/images/c14a2256-a303-4bac-a5fb-bb9e62cd4f1a/favicon.png"
+      alt="Discover Sri Lanka app icon"
       style={{
         width: '100%',
         height: '100%',

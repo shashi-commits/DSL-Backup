@@ -1,0 +1,198 @@
+{
+  "destinations": [
+    {
+      "id": "galle",
+      "name": "Galle",
+      "region": "Southern Province",
+      "categories": ["Cultural & Historical", "Beach & Coastal"],
+      "overview": "A historic fortified city on Sri Lanka's southwest coast, famous for its well-preserved Dutch colonial architecture and beautiful beaches.",
+      "description": "Galle Fort, a UNESCO World Heritage Site, showcases centuries of colonial history with cobblestone streets, charming cafes, and stunning ocean views.",
+      "coordinates": { "lat": 6.0328, "lng": 80.217 },
+      "nearbyAttractions": ["Galle Fort", "Unawatuna Beach", "Jungle Beach", "Japanese Peace Pagoda"],
+      "bestTimeToVisit": "December to March",
+      "activities": ["Historical tours", "Beach activities", "Shopping", "Photography"],
+      "imageUrl": "https://example.com/galle.jpg"
+    },
+    {
+      "id": "polonnaruwa",
+      "name": "Polonnaruwa",
+      "region": "North Central Province",
+      "categories": ["Cultural & Historical", "Wildlife"],
+      "overview": "Ancient capital of Sri Lanka with magnificent ruins and archaeological treasures, surrounded by wildlife-rich areas.",
+      "description": "This medieval capital features well-preserved temples, palaces, and statues that showcase the grandeur of ancient Sri Lankan civilization.",
+      "coordinates": { "lat": 7.9403, "lng": 81.0188 },
+      "nearbyAttractions": ["Royal Palace", "Gal Vihara", "Parakrama Samudra", "Minneriya National Park"],
+      "bestTimeToVisit": "May to September",
+      "activities": ["Archaeological tours", "Wildlife safaris", "Cycling", "Photography"],
+      "imageUrl": "https://example.com/polonnaruwa.jpg"
+    },
+    {
+      "id": "yala",
+      "name": "Yala National Park",
+      "region": "Southern & Uva Provinces",
+      "categories": ["Wildlife", "Nature & Scenic"],
+      "overview": "Sri Lanka's most famous national park, renowned for having the highest density of leopards in the world.",
+      "description": "Spanning 979 square kilometers, Yala offers incredible wildlife viewing opportunities including elephants, sloth bears, crocodiles, and over 215 bird species.",
+      "coordinates": { "lat": 6.3725, "lng": 81.5072 },
+      "nearbyAttractions": ["Yala National Park", "Kataragama Temple", "Sithulpawwa Rock Temple", "Bundala National Park"],
+      "bestTimeToVisit": "February to July",
+      "activities": ["Wildlife safaris", "Bird watching", "Photography", "Nature walks"],
+      "imageUrl": "https://example.com/yala.jpg"
+    },
+    {
+      "id": "bentota",
+      "name": "Bentota",
+      "region": "Southern Province",
+      "categories": ["Beach & Coastal", "Adventure & Sports"],
+      "overview": "A pristine beach destination perfect for water sports, relaxation, and exploring mangrove ecosystems.",
+      "description": "Golden sandy beaches, calm waters, and luxury resorts make Bentota a premier beach destination with excellent water sports facilities.",
+      "coordinates": { "lat": 6.4271, "lng": 79.9951 },
+      "nearbyAttractions": ["Bentota Beach", "Madu River", "Brief Garden", "Kosgoda Turtle Hatchery"],
+      "bestTimeToVisit": "December to March",
+      "activities": ["Water sports", "Boat tours", "Turtle watching", "Ayurveda treatments"],
+      "imageUrl": "https://example.com/bentota.jpg"
+    },
+    {
+      "id": "kandy",
+      "name": "Kandy",
+      "region": "Central Province",
+      "categories": ["Cultural & Historical", "Religious & Spiritual", "Nature & Scenic"],
+      "overview": "The cultural capital of Sri Lanka, home to the sacred Temple of the Tooth and surrounded by lush hills.",
+      "description": "A UNESCO World Heritage City that was the last capital of the ancient kings' era, famous for its cultural performances and Buddhist heritage.",
+      "coordinates": { "lat": 7.2906, "lng": 80.6337 },
+      "nearbyAttractions": ["Temple of the Tooth", "Royal Botanical Gardens", "Kandy Lake", "Udawattakele Forest"],
+      "bestTimeToVisit": "December to April",
+      "activities": ["Cultural tours", "Temple visits", "Botanical gardens", "Traditional performances"],
+      "imageUrl": "https://example.com/kandy.jpg"
+    },
+    {
+      "id": "ella",
+      "name": "Ella",
+      "region": "Uva Province",
+      "categories": ["Nature & Scenic", "Adventure & Sports"],
+      "overview": "A charming hill country town famous for its stunning viewpoints, waterfalls, and hiking trails.",
+      "description": "Nestled in the misty hills, Ella offers breathtaking landscapes, tea plantations, and some of the most Instagram-worthy spots in Sri Lanka.",
+      "coordinates": { "lat": 6.8667, "lng": 81.0467 },
+      "nearbyAttractions": ["Ella Rock", "Nine Arch Bridge", "Little Adam's Peak", "Ravana Falls"],
+      "bestTimeToVisit": "December to March",
+      "activities": ["Hiking", "Train rides", "Photography", "Tea plantation tours"],
+      "imageUrl": "https://example.com/ella.jpg"
+    },
+    {
+      "id": "anuradhapura",
+      "name": "Anuradhapura",
+      "region": "North Central Province",
+      "categories": ["Cultural & Historical", "Religious & Spiritual"],
+      "overview": "One of the ancient capitals of Sri Lanka, famous for its well-preserved ruins of ancient Lankan civilization.",
+      "description": "A sacred city of Buddhism featuring magnificent dagobas, ancient pools, and the sacred Bodhi tree, showcasing 1,300 years of history.",
+      "coordinates": { "lat": 8.3114, "lng": 80.4037 },
+      "nearbyAttractions": ["Sri Maha Bodhi", "Ruwanwelisaya", "Jetavanaramaya", "Abhayagiri Monastery"],
+      "bestTimeToVisit": "December to March",
+      "activities": ["Archaeological tours", "Pilgrimage", "Cycling", "Historical exploration"],
+      "imageUrl": "https://example.com/anuradhapura.jpg"
+    },
+    {
+      "id": "sigiriya",
+      "name": "Sigiriya",
+      "region": "Central Province",
+      "categories": ["Cultural & Historical", "Adventure & Sports"],
+      "overview": "The famous Lion Rock fortress, a UNESCO World Heritage Site with ancient frescoes and stunning panoramic views.",
+      "description": "Rising 200 meters from the surrounding plains, this 5th-century sky fortress features remarkable engineering and artistic achievements.",
+      "coordinates": { "lat": 7.9571, "lng": 80.7603 },
+      "nearbyAttractions": ["Lion Rock", "Sigiriya Museum", "Pidurangala Rock", "Dambulla Cave Temple"],
+      "bestTimeToVisit": "December to March",
+      "activities": ["Rock climbing", "Historical tours", "Photography", "Sunrise viewpoints"],
+      "imageUrl": "https://example.com/sigiriya.jpg"
+    },
+    {
+      "id": "mirissa",
+      "name": "Mirissa",
+      "region": "Southern Province",
+      "categories": ["Beach & Coastal", "Wildlife"],
+      "overview": "A tropical beach paradise famous for whale watching, pristine beaches, and vibrant nightlife.",
+      "description": "This crescent-shaped beach offers some of the best whale watching opportunities in Asia, along with excellent surfing conditions.",
+      "coordinates": { "lat": 5.9467, "lng": 80.4681 },
+      "nearbyAttractions": ["Mirissa Beach", "Coconut Tree Hill", "Snake Island", "Weligama Bay"],
+      "bestTimeToVisit": "December to April",
+      "activities": ["Whale watching", "Surfing", "Beach relaxation", "Snorkeling"],
+      "imageUrl": "https://example.com/mirissa.jpg"
+    },
+    {
+      "id": "nuwara-eliya",
+      "name": "Nuwara Eliya",
+      "region": "Central Province",
+      "categories": ["Nature & Scenic", "Adventure & Sports"],
+      "overview": "Known as 'Little England', this hill station features cool climate, tea plantations, and colonial architecture.",
+      "description": "The heart of Sri Lanka's tea country, offering cool mountain air, beautiful gardens, and the famous Ceylon tea experience.",
+      "coordinates": { "lat": 6.9497, "lng": 80.7891 },
+      "nearbyAttractions": ["Horton Plains", "Gregory Lake", "Hakgala Botanical Gardens", "Pedro Tea Estate"],
+      "bestTimeToVisit": "December to March",
+      "activities": ["Tea plantation tours", "Hiking", "Boating", "Golf"],
+      "imageUrl": "https://example.com/nuwara-eliya.jpg"
+    },
+    {
+      "id": "adam-peak",
+      "name": "Adam's Peak",
+      "region": "Central Province",
+      "categories": ["Religious & Spiritual", "Adventure & Sports", "Nature & Scenic"],
+      "overview": "A sacred mountain revered by multiple religions, famous for the 'Sacred Footprint' and sunrise pilgrimage.",
+      "description": "Standing at 2,243 meters, this conical mountain attracts pilgrims and hikers who climb during the night to witness the spectacular sunrise.",
+      "coordinates": { "lat": 6.8092, "lng": 80.4989 },
+      "nearbyAttractions": ["Sri Pada Temple", "Dalhousie", "Maskeliya Reservoir", "Norton Bridge"],
+      "bestTimeToVisit": "December to May",
+      "activities": ["Pilgrimage hiking", "Sunrise viewing", "Photography", "Meditation"],
+      "imageUrl": "https://example.com/adam-peak.jpg"
+    },
+    {
+      "id": "kosgoda",
+      "name": "Kosgoda",
+      "region": "Southern Province",
+      "categories": ["Wildlife", "Beach & Coastal"],
+      "overview": "Famous for its turtle conservation project and pristine beaches, perfect for eco-tourism and marine life observation.",
+      "description": "Home to five species of sea turtles, this coastal town offers unique opportunities to witness turtle conservation efforts and beautiful beaches.",
+      "coordinates": { "lat": 6.3286, "lng": 80.0233 },
+      "nearbyAttractions": ["Kosgoda Turtle Hatchery", "Kosgoda Beach", "Madu River", "Balapitiya"],
+      "bestTimeToVisit": "November to April",
+      "activities": ["Turtle watching", "Conservation tours", "Beach walks", "Boat safaris"],
+      "imageUrl": "https://example.com/kosgoda.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": "wildlife",
+      "name": "Wildlife",
+      "description": "Experience Sri Lanka's incredible biodiversity with leopards, elephants, and exotic birds",
+      "icon": "mdi:elephant"
+    },
+    {
+      "id": "cultural-historical",
+      "name": "Cultural & Historical",
+      "description": "Explore ancient ruins, temples, and UNESCO World Heritage sites",
+      "icon": "mdi:temple"
+    },
+    {
+      "id": "beach-coastal",
+      "name": "Beach & Coastal",
+      "description": "Relax on pristine beaches and enjoy tropical coastal experiences",
+      "icon": "mdi:beach"
+    },
+    {
+      "id": "adventure-sports",
+      "name": "Adventure & Sports",
+      "description": "Thrilling activities from hiking to water sports and rock climbing",
+      "icon": "mdi:hiking"
+    },
+    {
+      "id": "nature-scenic",
+      "name": "Nature & Scenic",
+      "description": "Breathtaking landscapes, tea plantations, and natural wonders",
+      "icon": "mdi:mountain"
+    },
+    {
+      "id": "religious-spiritual",
+      "name": "Religious & Spiritual",
+      "description": "Sacred sites, temples, and spiritual experiences",
+      "icon": "mdi:lotus"
+    }
+  ]
+}

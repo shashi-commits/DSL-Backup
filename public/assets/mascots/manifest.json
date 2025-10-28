@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "mascots": [
+    {
+      "name": "Tiko the Turtle",
+      "id": "turtle",
+      "alt": "Cute sea turtle mascot, smiling",
+      "file": "/assets/mascots/turtle.svg",
+      "suggestedAnimations": ["idle-bob", "hover-wiggle", "entrance-pop"],
+      "bestUsedIn": ["hero", "beach", "wildlife"]
+    },
+    {
+      "name": "Ellie the Elephant",
+      "id": "elephant",
+      "alt": "Friendly elephant mascot with big ear",
+      "file": "/assets/mascots/elephant.svg",
+      "suggestedAnimations": ["idle-float", "hover-wiggle"],
+      "bestUsedIn": ["wildlife", "map", "modal"]
+    },
+    {
+      "name": "Chai the Tea Sprite",
+      "id": "tea-sprite",
+      "alt": "Cheerful tea cup with sprouting leaf",
+      "file": "/assets/mascots/tea-sprite.svg",
+      "suggestedAnimations": ["idle-float", "entrance-pop"],
+      "bestUsedIn": ["nature", "category-card", "footer"]
+    },
+    {
+      "name": "Kiki the Surfer Cat",
+      "id": "surfer-cat",
+      "alt": "Playful orange cat riding a surfboard",
+      "file": "/assets/mascots/surfer-cat.svg",
+      "suggestedAnimations": ["hover-wiggle", "idle-bob"],
+      "bestUsedIn": ["beach", "adventure", "hero"]
+    },
+    {
+      "name": "Navi the Lighthouse Bird",
+      "id": "lighthouse-bird",
+      "alt": "Tiny blue bird near a lighthouse",
+      "file": "/assets/mascots/lighthouse-bird.svg",
+      "suggestedAnimations": ["idle-float"],
+      "bestUsedIn": ["map", "tooltips"]
+    },
+    {
+      "name": "Luma the Lotus Monk",
+      "id": "lotus-monk",
+      "alt": "Smiling monk on a lotus",
+      "file": "/assets/mascots/lotus-monk.svg",
+      "suggestedAnimations": ["idle-float", "entrance-pop"],
+      "bestUsedIn": ["spiritual", "cultural", "categories"]
+    }
+  ]
+}

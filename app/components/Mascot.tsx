@@ -37,12 +37,11 @@ const animationVariants: Record<Animation, object> = {
 
 export default function Mascot({
   src,
-  alt: _alt,
   name,
   size = 32,
   animation = 'none',
   decorative = false,
-}: MascotProps) {
+}: Omit<MascotProps, 'alt'>) {
   return (
     <motion.div
       className="inline-block"

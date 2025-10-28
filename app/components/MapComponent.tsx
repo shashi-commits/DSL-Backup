@@ -202,7 +202,7 @@ export default function MapComponent() {
         <div className="relative">
           <div className="relative mx-auto max-w-5xl h-[400px] md:h-[600px] rounded-3xl shadow-2xl border border-gray-200 overflow-hidden z-10">
             <MapContainer 
-              center={[7.8731, 80.7718]} // Center of Sri Lanka
+              center={[7.8731, 80.7718] as [number, number]}
               zoom={8} 
               style={{ height: '100%', width: '100%' }}
               scrollWheelZoom={true}

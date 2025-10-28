@@ -6,7 +6,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Icon } from '@iconify/react';
 import { MapContainer, TileLayer, Marker, Tooltip } from 'react-leaflet';
 import L, { LatLngExpression } from 'leaflet';
-
 // --- TYPE & DATA UPDATES ---
 
 // Changed from MapPosition to Leaflet's type
@@ -209,9 +208,7 @@ export default function MapComponent() {
               scrollWheelZoom={true}
             >
               <TileLayer
-                // @ts-expect-error - react-leaflet type mismatch with Next.js 15
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               />
 
               {/* Markers */}
@@ -232,9 +229,7 @@ export default function MapComponent() {
                 return (
                   <Marker
                     key={d.id}
-                    // @ts-expect-error - react-leaflet type mismatch with Next.js 15
                     position={d.coordinates}
-                    icon={getCategoryIcon(cat)}
                     eventHandlers={{
                       click: () => setSelected(d),
                     }}

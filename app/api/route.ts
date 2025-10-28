@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { AzureOpenAI } from 'openai';
-import destinations from '../../../data/destinations.json';
+import destinations from '../../data/destinations.json';
 
 const client = new AzureOpenAI({
   apiKey: process.env.AZURE_OPENAI_API_KEY,

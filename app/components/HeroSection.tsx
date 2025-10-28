@@ -4,7 +4,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Icon } from '@iconify/react';
 import Link from 'next/link';
-import Mascot from '@/app/components/Mascot'; // Assuming this path is correct
 
 export default function HeroSection() {
   return (
@@ -176,27 +175,6 @@ export default function HeroSection() {
         </motion.div>
       </motion.div>
 
-      {/* Decorative Mascots (z-30) */}
-      <div className="pointer-events-none absolute inset-0 z-30">
-        <Mascot
-          name="Tiko the Turtle"
-          src="/assets/mascots/turtle.svg"
-          alt="Cute turtle swimming"
-          animation="idle-bob"
-          size={90}
-          decorative
-          className="hidden sm:block absolute bottom-16 left-6"
-        />
-        <Mascot
-          name="Navi the Lighthouse Bird"
-          src="/assets/mascots/lighthouse-bird.svg"
-          alt="Tiny bird fluttering"
-          animation="idle-float"
-          size={80}
-          decorative
-          className="hidden md:block absolute top-20 right-10"
-        />
-      </div>
     </section>
   );
 }

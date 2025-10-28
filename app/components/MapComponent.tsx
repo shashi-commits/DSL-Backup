@@ -4,7 +4,6 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Icon } from '@iconify/react';
-import Mascot from '@/app/components/Mascot';
 import { MapContainer, TileLayer, Marker, Tooltip } from 'react-leaflet';
 import L, { LatLngExpression } from 'leaflet';
 
@@ -87,15 +86,6 @@ const getCategoryIcon = (category: string) => {
   });
 };
 
-const mascotByCategory: Record<string, { src: string; name: string; alt: string }> = {
-  'Wildlife': { src: '/assets/mascots/elephant.svg', name: 'Ellie the Elephant', alt: 'Elephant mascot' },
-  'Beach & Coastal': { src: '/assets/mascots/turtle.svg', name: 'Tiko the Turtle', alt: 'Turtle mascot' },
-  'Cultural & Historical': { src: '/assets/mascots/lotus-monk.svg', name: 'Luma the Lotus Monk', alt: 'Lotus monk mascot' },
-  'Adventure & Sports': { src: '/assets/mascots/surfer-cat.svg', name: 'Kiki the Surfer Cat', alt: 'Surfer cat mascot' },
-  'Nature & Scenic': { src: '/assets/mascots/tea-sprite.svg', name: 'Chai the Tea Sprite', alt: 'Tea sprite mascot' },
-  'Religious & Spiritual': { src: '/assets/mascots/lotus-monk.svg', name: 'Luma the Lotus Monk', alt: 'Lotus monk mascot' },
-  'Uncategorized': { src: '/assets/mascots/lighthouse-bird.svg', name: 'Navi the Lighouse Bird', alt: 'Bird mascot' },
-};
 
 // This is your original component, just renamed
 export default function MapComponent() {
@@ -235,7 +225,6 @@ export default function MapComponent() {
                 // =============================================
                 
                 const cat = d.categories?.[0] || 'Uncategorized';
-                const m = mascotByCategory[cat] || mascotByCategory['Uncategorized'];
                 const attractions = (d.famousAttractions || []).slice(0, 3);
                 
                 return (
@@ -256,7 +245,6 @@ export default function MapComponent() {
                     <Tooltip>
                       <div className="p-1">
                         <div className="flex items-center gap-2">
-                          <Mascot name={m.name} src={m.src} alt={m.alt} size={28} animation="idle-float" decorative />
                           <span className="text-sm font-medium text-gray-900">{d.name}</span>
                         </div>
                         <div className="mt-1 text-[11px] text-gray-600">
@@ -322,11 +310,6 @@ export default function MapComponent() {
                   aria-label={`${selected.name} details`}
                 >
                   <div className="flex items-center justify-between mb-4">
-                    {(() => {
-                      const primary = selected.categories?.[0] || 'Uncategorized';
-                      const m = mascotByCategory[primary] || mascotByCategory['Uncategorized'];
-                      return <Mascot name={m.name} src={m.src} alt={m.alt} size={36} animation="entrance-pop" decorative />;
-                    })()}
                     <h3 className="text-2xl font-medium text-gray-900">
                       <span data-editor-id={`app/components/InteractiveMap.tsx:modal:title:${selected.id}`}>{selected.name}</span>
                     </h3>

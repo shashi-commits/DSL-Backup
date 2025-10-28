@@ -1,13 +1,7 @@
-'use client';
-
 import React from 'react';
-import { useMemo } from 'react';
-import { motion } from 'framer-motion';
-import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import Navbar from '@/app/components/Navbar';
 import Footer from '@/app/components/Footer';
-import Mascot from '@/app/components/Mascot';
 import data from '@/data/destinations.json';
 
 interface Destination {
@@ -34,20 +28,10 @@ const getCategoryColor = (category: string) => {
   return colors[category] || 'bg-gray-100 text-gray-700 border-gray-200';
 };
 
-const mascotByPrimaryCategory: Record<string, { src: string; name: string; alt: string; anim: 'idle-bob' | 'idle-float' | 'hover-wiggle' | 'entrance-pop' | 'pulse-glow' }> = {
-  'Wildlife': { src: '/assets/mascots/elephant.svg', name: 'Ellie the Elephant', alt: 'Elephant mascot', anim: 'idle-float' },
-  'Beach & Coastal': { src: '/assets/mascots/surfer-cat.svg', name: 'Kiki the Surfer Cat', alt: 'Surfer cat mascot', anim: 'hover-wiggle' },
-  'Cultural & Historical': { src: '/assets/mascots/lotus-monk.svg', name: 'Luma the Lotus Monk', alt: 'Lotus monk mascot', anim: 'idle-float' },
-  'Adventure & Sports': { src: '/assets/mascots/surfer-cat.svg', name: 'Kiki the Surfer Cat', alt: 'Surfer cat mascot', anim: 'hover-wiggle' },
-  'Nature & Scenic': { src: '/assets/mascots/tea-sprite.svg', name: 'Chai the Tea Sprite', alt: 'Tea sprite mascot', anim: 'idle-bob' },
-  'Religious & Spiritual': { src: '/assets/mascots/lotus-monk.svg', name: 'Luma the Lotus Monk', alt: 'Lotus monk mascot', anim: 'entrance-pop' },
-};
 
 export default async function DestinationDetail({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const destination = useMemo<Destination | undefined>(() => {
-    return data.destinations.find((d: Destination) => d.id === id);
-  }, [id]);
+  const destination = data.destinations.find((d: Destination) => d.id === id);
 
   if (!destination) {
     return (
@@ -55,7 +39,7 @@ export default async function DestinationDetail({ params }: { params: Promise<{ 
         <Navbar />
         <section className="pt-28 pb-24">
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <Icon icon="mdi:alert-circle" className="text-5xl text-red-500 mb-4 mx-auto" />
+              <span className="text-5xl mb-4 block">⚠️</span>
             <h1 className="text-3xl font-semibold text-gray-900 mb-3">
               <span data-editor-id="app/destinations/[id]/page.tsx:55:13">Destination not found</span>
             </h1>
@@ -63,8 +47,7 @@ export default async function DestinationDetail({ params }: { params: Promise<{ 
               <span data-editor-id="app/destinations/[id]/page.tsx:58:13">The page you are looking for doesn&apos;t exist or may have been moved.</span>
             </p>
             <Link href="/destinations" className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-500 text-white rounded-xl hover:bg-emerald-600 transition-colors">
-              <Icon icon="mdi:arrow-left" />
-              <span data-editor-id="app/destinations/[id]/page.tsx:61:13">Back to Destinations</span>
+              <span>← Back to Destinations</span>
             </Link>
           </div>
         </section>
@@ -73,8 +56,6 @@ export default async function DestinationDetail({ params }: { params: Promise<{ 
     );
   }
 
-  const primaryCat = destination.categories[0];
-  const mascot = mascotByPrimaryCategory[primaryCat] || mascotByPrimaryCategory['Nature & Scenic'];
 
   return (
     <main className="min-h-screen bg-gray-50">
@@ -94,9 +75,6 @@ export default async function DestinationDetail({ params }: { params: Promise<{ 
                   <span data-editor-id="app/destinations/[id]/page.tsx:86:15">{destination.region}</span>
                 </div>
               </div>
-              <div className="ml-auto hidden md:block">
-                <Mascot name={mascot.name} src={mascot.src} alt={mascot.alt} size={80} animation={mascot.anim} decorative />
-              </div>
             </div>
 
             {/* Categories */}
@@ -115,7 +93,7 @@ export default async function DestinationDetail({ params }: { params: Promise<{ 
       <section className="py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-10">
           {/* Overview */}
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="lg:col-span-2">
+          <div className="lg:col-span-2">
             <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
               <h2 className="text-2xl font-semibold text-gray-900 mb-3">
                 <span data-editor-id="app/destinations/[id]/page.tsx:112:19">Overview</span>
@@ -142,23 +120,20 @@ export default async function DestinationDetail({ params }: { params: Promise<{ 
                     <div className="absolute inset-0 flex items-center justify-center">
                       <span data-editor-id={`app/destinations/[id]/page.tsx:135:23:${i}`} className="text-gray-500 text-sm">Photo coming soon</span>
                     </div>
-                    <div className="absolute bottom-2 right-2 opacity-90">
-                      <Mascot name={mascot.name} src={mascot.src} alt={mascot.alt} size={36} animation="pulse-glow" decorative />
-                    </div>
                   </div>
                 ))}
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Sidebar */}
-          <motion.aside initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} className="space-y-6">
+          <aside className="space-y-6">
             <div className="bg-white rounded-3xl p-6 shadow-lg border border-gray-100">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 <span data-editor-id="app/destinations/[id]/page.tsx:151:21">Best time to visit</span>
               </h3>
               <div className="flex items-center gap-2 text-gray-700">
-                <Icon icon="mdi:calendar" className="text-emerald-500" />
+                <span className="text-emerald-500">📅</span>
                 <span data-editor-id="app/destinations/[id]/page.tsx:154:21">{destination.bestTimeToVisit}</span>
               </div>
             </div>
@@ -170,7 +145,7 @@ export default async function DestinationDetail({ params }: { params: Promise<{ 
               <ul className="space-y-2">
                 {destination.nearbyAttractions.map((a, idx) => (
                   <li key={`${a}-${idx}`} className="flex items-center gap-2 text-gray-700 text-sm">
-                    <Icon icon="mdi:map" className="text-blue-500" />
+                    <span className="text-blue-500">📍</span>
                     <span data-editor-id={`app/destinations/[id]/page.tsx:165:25:${idx}`}>{a}</span>
                   </li>
                 ))}
@@ -198,13 +173,12 @@ export default async function DestinationDetail({ params }: { params: Promise<{ 
                 <p className="leading-relaxed">
                   <span data-editor-id="app/destinations/[id]/page.tsx:188:23">Use the interactive map to explore nearby towns and plan routes easily.</span>
                 </p>
-                <Link href="/recommendations" className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-xl hover:from-emerald-600 hover:to-blue-600 transition-colors">
-                  <Icon icon="mdi:brain" />
-                  <span data-editor-id="app/destinations/[id]/page.tsx:191:23">Get AI recommendations</span>
+                <Link href="/#ai-recommendations" className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-emerald-500 to-blue-500 text-white rounded-xl hover:from-emerald-600 hover:to-blue-600 transition-colors">
+                  <span>🧠 Get AI recommendations</span>
                 </Link>
               </div>
             </div>
-          </motion.aside>
+          </aside>
         </div>
       </section>
 

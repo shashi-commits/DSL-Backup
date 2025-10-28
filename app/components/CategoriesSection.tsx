@@ -3,7 +3,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Icon } from '@iconify/react';
-import Mascot from '@/app/components/Mascot';
 
 const categories = [
   {
@@ -119,32 +118,6 @@ export default function CategoriesSection() {
 
               {/* Hover Effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl"></div>
-
-              {/* Mascot Overlay */}
-              {(() => {
-                const map: Record<string, { src: string; name: string; alt: string; anim: 'idle-bob' | 'idle-float' | 'hover-wiggle' | 'entrance-pop' | 'pulse-glow' } > = {
-                  'wildlife': { src: '/assets/mascots/elephant.svg', name: 'Ellie the Elephant', alt: 'Elephant mascot', anim: 'idle-float' },
-                  'cultural-historical': { src: '/assets/mascots/lotus-monk.svg', name: 'Luma the Lotus Monk', alt: 'Monk on lotus mascot', anim: 'idle-float' },
-                  'beach-coastal': { src: '/assets/mascots/surfer-cat.svg', name: 'Kiki the Surfer Cat', alt: 'Surfer cat mascot', anim: 'hover-wiggle' },
-                  'adventure-sports': { src: '/assets/mascots/surfer-cat.svg', name: 'Kiki the Surfer Cat', alt: 'Surfer cat mascot', anim: 'hover-wiggle' },
-                  'nature-scenic': { src: '/assets/mascots/tea-sprite.svg', name: 'Chai the Tea Sprite', alt: 'Tea sprite mascot', anim: 'idle-bob' },
-                  'religious-spiritual': { src: '/assets/mascots/lotus-monk.svg', name: 'Luma the Lotus Monk', alt: 'Monk on lotus mascot', anim: 'idle-float' },
-                };
-                const m = map[category.id];
-                return (
-                  <div className="absolute -top-1 -right-1 opacity-90">
-                    <Mascot
-                      name={m.name}
-                      src={m.src}
-                      alt={m.alt}
-                      size={64}
-                      animation={m.anim}
-                      decorative
-                      className="pointer-events-none"
-                    />
-                  </div>
-                );
-              })()}
             </motion.div>
           ))}
         </div>

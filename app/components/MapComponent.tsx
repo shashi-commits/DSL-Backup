@@ -5,7 +5,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Icon } from '@iconify/react';
 import { MapContainer, TileLayer, Marker, Tooltip } from 'react-leaflet';
-import L, { LatLngExpression } from 'leaflet';
+import { LatLngExpression } from 'leaflet';
 // --- TYPE & DATA UPDATES ---
 
 // Changed from MapPosition to Leaflet's type

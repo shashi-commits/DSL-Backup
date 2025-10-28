@@ -8,7 +8,6 @@ import {
   TileLayer,
   Marker,
   Tooltip,
-  useMapEvents,
 } from 'react-leaflet';
 import { divIcon, LatLngExpression } from 'leaflet';
 import Mascot from './Mascot'; // same folder

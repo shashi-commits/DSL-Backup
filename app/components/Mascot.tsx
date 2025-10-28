@@ -37,7 +37,7 @@ const animationVariants: Record<Animation, object> = {
 
 export default function Mascot({
   src,
-  alt,
+  alt: _alt,
   name,
   size = 32,
   animation = 'none',

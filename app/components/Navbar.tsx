@@ -27,7 +27,7 @@ export default function Navbar() {
             </div>
             <span className="text-lg sm:text-xl font-semibold text-gray-900">
               <span data-editor-id="app/components/Navbar.tsx:24:14" className="hidden xs:inline">Discover Sri Lanka</span>
-              <span className="xs:hidden">DSL</span>
+              <span className="xs:hidden">Discover Sri Lanka</span>
             </span>
           </Link>
 

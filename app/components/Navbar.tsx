@@ -18,15 +18,16 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-lg border-b border-gray-200 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-14 sm:h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3">
-            <div className="flex items-center justify-center w-8 h-8 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-lg">
-              <Icon icon="mdi:island" className="text-white text-lg" />
+          <Link href="/" className="flex items-center space-x-2 sm:space-x-3">
+            <div className="flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-r from-emerald-500 to-blue-500 rounded-lg">
+              <Icon icon="mdi:island" className="text-white text-base sm:text-lg" />
             </div>
-            <span className="text-xl font-semibold text-gray-900">
-              <span data-editor-id="app/components/Navbar.tsx:24:14">Discover Sri Lanka</span>
+            <span className="text-lg sm:text-xl font-semibold text-gray-900">
+              <span data-editor-id="app/components/Navbar.tsx:24:14" className="hidden xs:inline">Discover Sri Lanka</span>
+              <span className="xs:hidden">DSL</span>
             </span>
           </Link>
 
@@ -66,15 +67,15 @@ export default function Navbar() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden border-t border-gray-200 bg-white"
+              className="md:hidden border-t border-gray-200 bg-white/95 backdrop-blur-lg"
             >
-              <div className="py-4 space-y-2">
+              <div className="py-3 space-y-1">
                 {navItems.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className="block px-4 py-2 text-gray-600 hover:text-emerald-600 hover:bg-gray-50 transition-colors duration-200"
+                    className="block px-4 py-2.5 text-base text-gray-600 hover:text-emerald-600 hover:bg-gray-50/80 active:bg-gray-100/80 transition-colors duration-200"
                   >
                     <span data-editor-id={`app/components/Navbar.tsx:68:21:${item.name}`}>{item.name}</span>
                   </Link>

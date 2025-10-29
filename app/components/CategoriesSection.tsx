@@ -82,7 +82,7 @@ export default function CategoriesSection() {
         </motion.div>
 
         {/* Categories Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 px-2 sm:px-0">
           {categories.map((category, index) => (
             <motion.div
               key={category.id}
@@ -91,7 +91,7 @@ export default function CategoriesSection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className={`relative p-8 rounded-3xl bg-gradient-to-br ${category.bgGradient} border border-gray-100 cursor-pointer group overflow-hidden`}
+              className={`relative p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-br ${category.bgGradient} border border-gray-100 cursor-pointer group overflow-hidden`}
             >
               {/* Background Pattern */}
               <div className="absolute top-0 right-0 w-32 h-32 opacity-5 group-hover:opacity-10 transition-opacity duration-300">

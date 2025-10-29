@@ -40,7 +40,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm mb-8"
+          className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs sm:text-sm mb-6 sm:mb-8"
         >
           <Icon icon="mdi:sparkles" className="text-yellow-400" />
           <span data-editor-id="app/components/HeroSection.tsx:26:11">
@@ -53,7 +53,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-4xl md:text-7xl font-light text-white mb-6 leading-tight drop-shadow-lg"
+          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-light text-white mb-4 sm:mb-6 leading-tight drop-shadow-lg"
         >
           <span data-editor-id="app/components/HeroSection.tsx:36:11">
             Discover the
@@ -86,11 +86,11 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto px-4"
         >
           <Link
             href="/destinations"
-            className="px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-medium rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-medium rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
           >
             <span data-editor-id="app/components/HeroSection.tsx:63:13">
               Explore Destinations

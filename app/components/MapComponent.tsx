@@ -286,8 +286,8 @@ export default function MapComponent() {
   const withCoords: WithCoords[] = useMemo(() => {
     const merged = locations
       .filter((l): l is WithCoords => {
+        if (!l.coordinates) return false;
         return (
-          l.coordinates &&
           Array.isArray(l.coordinates) &&
           l.coordinates.length === 2 &&
           typeof l.coordinates[0] === 'number' &&

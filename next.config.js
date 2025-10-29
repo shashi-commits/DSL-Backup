@@ -1,6 +1,5 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: "standalone",
   images: {
     unoptimized: true,
@@ -28,4 +27,4 @@ const nextConfig: NextConfig = {
   allowedDevOrigins: ['app-cosmic.com', '*.app-cosmic.com', 'vibecode.net', '*.vibecode.net'],
 };
 
-export default nextConfig;
+module.exports = nextConfig;

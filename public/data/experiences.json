@@ -1,0 +1,132 @@
+﻿[
+  {
+    "location": "Ella",
+    "category": "Adventure & Nature",
+    "emoji": "🌿",
+    "activities": [
+      "Hike Little Adam's Peak",
+      "Visit the Nine Arches Bridge",
+      "See Ravana Falls",
+      "Take a local cooking class"
+    ]
+  },
+  {
+    "location": "Knuckles",
+    "category": "Adventure & Nature",
+    "emoji": "🌿",
+    "activities": [
+      "Trek to Mini World's End (Pitawala Pathana)",
+      "Hike to Sera Ella Waterfall",
+      "Visit remote village of Meemure",
+      "Birdwatching"
+    ]
+  },
+  {
+    "location": "Adam's Peak",
+    "category": "Adventure & Nature",
+    "emoji": "🌿",
+    "activities": [
+      "Midnight pilgrimage hike",
+      "Visit Warleigh Church",
+      "See the Laxapana Falls"
+    ]
+  },
+  {
+    "location": "Kitulgala",
+    "category": "Adventure & Nature",
+    "emoji": "🌿",
+    "activities": [
+      "White Water Rafting on Kelani River",
+      "Jungle trekking and waterfall abseiling",
+      "Visit the Beli Lena Cave",
+      "See Bridge on the River Kwai film location"
+    ]
+  },
+  {
+    "location": "Sigiriya",
+    "category": "Culture & Heritage",
+    "emoji": "🏛️",
+    "activities": [
+      "Climb Sigiriya (Lion) Rock",
+      "Climb Pidurangala Rock for sunrise/sunset",
+      "Visit the Sigiriya Museum",
+      "Village tour with bullock cart ride"
+    ]
+  },
+  {
+    "location": "Nuwara Eliya",
+    "category": "Tea Country & Highlands",
+    "emoji": "☕",
+    "activities": [
+      "Visit tea plantation and factory",
+      "Walk around Gregory Lake",
+      "Explore Hakgala Botanic Gardens",
+      "See colonial-era Post Office"
+    ]
+  },
+  {
+    "location": "Anuradhapura",
+    "category": "Culture & Heritage",
+    "emoji": "🏛️",
+    "activities": [
+      "Explore Sacred City ruins",
+      "Visit Jaya Sri Maha Bodhi",
+      "See Kuttam Pokuna (twin ponds)",
+      "Visit nearby Mihintale rock temple"
+    ]
+  },
+  {
+    "location": "Galle Fort",
+    "category": "Culture & Heritage",
+    "emoji": "🏛️",
+    "activities": [
+      "Walk the Fort ramparts at sunset",
+      "Visit the Galle Lighthouse",
+      "Explore Dutch Reformed Church",
+      "Browse boutique shops and galleries"
+    ]
+  },
+  {
+    "location": "Arugam Bay",
+    "category": "Beaches & Water Sports",
+    "emoji": "🌊",
+    "activities": [
+      "Surfing at Main Point",
+      "Visit Muhudu Maha Viharaya temple",
+      "Safari to Kumana National Park",
+      "Relax at Elephant Rock"
+    ]
+  },
+  {
+    "location": "Weligama",
+    "category": "Beaches & Water Sports",
+    "emoji": "🌊",
+    "activities": [
+      "Learn to surf (beginner-friendly)",
+      "See stilt fishermen",
+      "Visit Kushta Raja Gala statue",
+      "Whale watching in Mirissa"
+    ]
+  },
+  {
+    "location": "Yala",
+    "category": "Wildlife & Safari",
+    "emoji": "🐘",
+    "activities": [
+      "Jeep safari for leopards",
+      "Visit Sithulpawwa Rock Temple",
+      "Explore Tissa Wewa lake",
+      "Visit Tissamaharama Raja Maha Vihara"
+    ]
+  },
+  {
+    "location": "Udawalawe",
+    "category": "Wildlife & Safari",
+    "emoji": "🐘",
+    "activities": [
+      "Jeep safari for elephants",
+      "Visit Elephant Transit Home",
+      "Explore Udawalawe Reservoir"
+    ]
+  }
+]

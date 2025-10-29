@@ -1,32 +1,402 @@
 [
-  { "id": 1, "name": "Katunayake", "categories": ["Cultural & Historical", "Nature & Scenic"], "famousAttractions": ["Bandaranaike International Airport vicinity", "Negombo Lagoon views"], "position": { "x": 190, "y": 280 } },
-  { "id": 2, "name": "Colombo", "categories": ["Cultural & Historical", "Beach & Coastal"], "famousAttractions": ["Galle Face Green", "Gangaramaya Temple", "Pettah Market"], "position": { "x": 180, "y": 290 } },
-  { "id": 3, "name": "Negombo", "categories": ["Beach & Coastal", "Cultural & Historical"], "famousAttractions": ["Negombo Beach", "Dutch Fort", "Lagoon boat rides"], "position": { "x": 185, "y": 270 } },
-  { "id": 4, "name": "Bentota", "categories": ["Beach & Coastal", "Adventure & Sports"], "famousAttractions": ["Bentota Beach", "Madu River safari", "Water sports"], "position": { "x": 150, "y": 300 } },
-  { "id": 5, "name": "Hikkaduwa", "categories": ["Beach & Coastal", "Wildlife"], "famousAttractions": ["Coral Sanctuary", "Turtle hatcheries", "Surfing"], "position": { "x": 150, "y": 310 } },
-  { "id": 6, "name": "Galle", "categories": ["Cultural & Historical", "Beach & Coastal"], "famousAttractions": ["Galle Fort", "Lighthouse", "Old Dutch Hospital"], "position": { "x": 160, "y": 320 } },
-  { "id": 7, "name": "Unawatuna", "categories": ["Beach & Coastal", "Nature & Scenic"], "famousAttractions": ["Unawatuna Beach", "Jungle Beach", "Japanese Peace Pagoda"], "position": { "x": 165, "y": 325 } },
-  { "id": 8, "name": "Mirissa", "categories": ["Beach & Coastal", "Wildlife"], "famousAttractions": ["Whale watching", "Coconut Tree Hill", "Secret Beach"], "position": { "x": 140, "y": 330 } },
-  { "id": 9, "name": "Talalla", "categories": ["Beach & Coastal", "Nature & Scenic"], "famousAttractions": ["Talalla Beach", "Calm bays", "Sunset points"], "position": { "x": 155, "y": 335 } },
-  { "id": 10, "name": "Kandy", "categories": ["Cultural & Historical", "Religious & Spiritual"], "famousAttractions": ["Temple of the Tooth", "Kandy Lake", "Peradeniya Botanic Gardens"], "position": { "x": 240, "y": 220 } },
-  { "id": 11, "name": "Pinnawala Elephant Orphanage", "categories": ["Wildlife", "Nature & Scenic"], "famousAttractions": ["Elephant bathing", "Feeding times"], "position": { "x": 220, "y": 230 } },
-  { "id": 12, "name": "Dambulla", "categories": ["Cultural & Historical", "Religious & Spiritual"], "famousAttractions": ["Dambulla Cave Temple", "Golden Temple"], "position": { "x": 270, "y": 170 } },
-  { "id": 13, "name": "Sigiriya Rock", "categories": ["Cultural & Historical", "Adventure & Sports"], "famousAttractions": ["Lion Rock fortress", "Frescoes", "Water gardens"], "position": { "x": 280, "y": 165 } },
-  { "id": 14, "name": "Pidurangala", "categories": ["Adventure & Sports", "Nature & Scenic"], "famousAttractions": ["Sunrise hike", "Panoramic views of Sigiriya"], "position": { "x": 282, "y": 168 } },
-  { "id": 15, "name": "Minneriya National Park", "categories": ["Wildlife", "Nature & Scenic"], "famousAttractions": ["The Gathering of elephants", "Jeep safaris"], "position": { "x": 300, "y": 165 } },
-  { "id": 16, "name": "Polonnaruwa", "categories": ["Cultural & Historical", "Wildlife"], "famousAttractions": ["Ancient city ruins", "Parakrama Samudraya", "Gal Vihara"], "position": { "x": 320, "y": 180 } },
-  { "id": 17, "name": "Anuradhapura", "categories": ["Cultural & Historical", "Religious & Spiritual"], "famousAttractions": ["Sacred Bo Tree", "Ruwanwelisaya Stupa", "Twin Ponds"], "position": { "x": 240, "y": 120 } },
-  { "id": 18, "name": "Kitulgala", "categories": ["Adventure & Sports", "Nature & Scenic"], "famousAttractions": ["White-water rafting", "Jungle trails"], "position": { "x": 210, "y": 245 } },
-  { "id": 19, "name": "Nuwara Eliya", "categories": ["Nature & Scenic", "Adventure & Sports"], "famousAttractions": ["Tea plantations", "Gregory Lake", "Horton Plains access"], "position": { "x": 260, "y": 240 } },
-  { "id": 20, "name": "Ella", "categories": ["Nature & Scenic", "Adventure & Sports"], "famousAttractions": ["Nine Arch Bridge", "Little Adam's Peak", "Ella Rock"], "position": { "x": 300, "y": 250 } },
-  { "id": 21, "name": "Yala National Park", "categories": ["Wildlife", "Nature & Scenic"], "famousAttractions": ["Leopards", "Birdlife", "Jeep safaris"], "position": { "x": 380, "y": 290 } },
-  { "id": 22, "name": "Udawalawe National Park", "categories": ["Wildlife", "Nature & Scenic"], "famousAttractions": ["Elephants", "Birdwatching", "Jeep safaris"], "position": { "x": 320, "y": 280 } },
-  { "id": 23, "name": "Adams Peak", "categories": ["Religious & Spiritual", "Adventure & Sports"], "famousAttractions": ["Pilgrimage climb", "Sunrise views"], "position": { "x": 230, "y": 255 } },
-  { "id": 24, "name": "Trincomalee", "categories": ["Beach & Coastal", "Cultural & Historical"], "famousAttractions": ["Koneswaram Temple", "Nilaveli access", "Marble Beach"], "position": { "x": 360, "y": 130 } },
-  { "id": 25, "name": "Nilaveli", "categories": ["Beach & Coastal", "Nature & Scenic"], "famousAttractions": ["Nilaveli Beach", "Pigeon Island snorkeling"], "position": { "x": 365, "y": 125 } },
-  { "id": 26, "name": "Arugam Bay", "categories": ["Beach & Coastal", "Adventure & Sports"], "famousAttractions": ["Surfing", "Lagoon safaris"], "position": { "x": 400, "y": 270 } },
-  { "id": 27, "name": "Jaffna", "categories": ["Cultural & Historical", "Religious & Spiritual"], "famousAttractions": ["Jaffna Fort", "Nallur Kandaswamy Kovil", "Library"], "position": { "x": 260, "y": 85 } },
-  { "id": 28, "name": "Delft Island", "categories": ["Nature & Scenic", "Wildlife"], "famousAttractions": ["Wild horses", "Coral walls", "Baobab tree"], "position": { "x": 240, "y": 90 } },
-  { "id": 29, "name": "Wilpattu", "categories": ["Wildlife", "Nature & Scenic"], "famousAttractions": ["Leopards", "Villūs (lakes)", "Jeep safaris"], "position": { "x": 220, "y": 140 } },
-  { "id": 30, "name": "Batticaloa", "categories": ["Beach & Coastal", "Cultural & Historical"], "famousAttractions": ["Batticaloa Lagoon", "Dutch Fort", "Beaches"], "position": { "x": 380, "y": 200 } }
+  {
+    "id": 1,
+    "name": "Ella Rock",
+    "categories": ["Adventure & Nature"],
+    "subcategory": "Hiking & Trekking",
+    "famousAttractions": ["Panoramic mountain views", "Challenging hiking trail", "Tea plantations"],
+    "coordinates": [6.8547, 81.0524]
+  },
+  {
+    "id": 2,
+    "name": "Knuckles Mountain Range",
+    "categories": ["Adventure & Nature"],
+    "subcategory": "Hiking & Trekking",
+    "famousAttractions": ["UNESCO World Heritage Site", "Diverse ecosystems", "Scenic trails"],
+    "coordinates": [7.4026, 80.8088]
+  },
+  {
+    "id": 3,
+    "name": "Adam's Peak",
+    "categories": ["Adventure & Nature", "Spiritual & Mindful Experiences"],
+    "subcategory": "Hiking & Trekking / Pilgrimage",
+    "famousAttractions": ["Sacred footprint", "Sunrise pilgrimage", "Religious significance"],
+    "coordinates": [6.8091, 80.4996]
+  },
+  {
+    "id": 4,
+    "name": "Kitulgala",
+    "categories": ["Adventure & Nature"],
+    "subcategory": "Water Rafting & Kayaking",
+    "famousAttractions": ["White water rafting", "Kelani River", "Film location"],
+    "coordinates": [6.95, 80.3742]
+  },
+  {
+    "id": 5,
+    "name": "Kalu Ganga River",
+    "categories": ["Adventure & Nature"],
+    "subcategory": "Water Rafting & Kayaking",
+    "famousAttractions": ["River mouth", "Water sports", "Coastal scenery"],
+    "coordinates": [6.5811, 79.9548]
+  },
+  {
+    "id": 6,
+    "name": "Belilena Cave",
+    "categories": ["Adventure & Nature"],
+    "subcategory": "Caving & Rock Climbing",
+    "famousAttractions": ["Archaeological site", "Cave exploration", "Ancient human remains"],
+    "coordinates": [7.0, 80.44]
+  },
+  {
+    "id": 7,
+    "name": "Sigiriya Rock Fortress",
+    "categories": ["Culture & Heritage", "Adventure & Nature", "Photography & Scenic Spots"],
+    "subcategory": "Ancient Cities / Rock Climbing",
+    "famousAttractions": ["Lion Rock", "Ancient frescoes", "UNESCO World Heritage"],
+    "coordinates": [7.96, 80.76]
+  },
+  {
+    "id": 8,
+    "name": "Nuwara Eliya",
+    "categories": ["Tea Country & Highlands", "Adventure & Nature"],
+    "subcategory": "Mountain Biking / Tea Plantations",
+    "famousAttractions": ["Little England", "Gregory Lake", "Tea estates"],
+    "coordinates": [6.96, 80.77]
+  },
+  {
+    "id": 9,
+    "name": "Haputale",
+    "categories": ["Tea Country & Highlands", "Adventure & Nature"],
+    "subcategory": "Mountain Biking / Tea Country",
+    "famousAttractions": ["Lipton's Seat", "Mountain views", "Tea trails"],
+    "coordinates": [6.77, 80.96]
+  },
+  {
+    "id": 10,
+    "name": "Horton Plains National Park",
+    "categories": ["Adventure & Nature", "Photography & Scenic Spots"],
+    "subcategory": "Camping & Glamping",
+    "famousAttractions": ["World's End", "Baker's Falls", "Cloud forest"],
+    "coordinates": [6.81, 80.8]
+  },
+  {
+    "id": 11,
+    "name": "Meemure Village",
+    "categories": ["Adventure & Nature", "Hidden Gems & Offbeat Trails"],
+    "subcategory": "Camping / Village Trek",
+    "famousAttractions": ["Remote village", "Traditional lifestyle", "Knuckles access"],
+    "coordinates": [7.43, 80.85]
+  },
+  {
+    "id": 12,
+    "name": "Anuradhapura",
+    "categories": ["Culture & Heritage"],
+    "subcategory": "Ancient Cities",
+    "famousAttractions": ["Sacred Bo Tree", "Ancient stupas", "Monastic ruins"],
+    "coordinates": [8.335, 80.4108]
+  },
+  {
+    "id": 13,
+    "name": "Polonnaruwa",
+    "categories": ["Culture & Heritage"],
+    "subcategory": "Ancient Cities",
+    "famousAttractions": ["Gal Vihara", "Royal Palace", "Ancient reservoir"],
+    "coordinates": [7.9333, 81.0]
+  },
+  {
+    "id": 14,
+    "name": "Galle Fort",
+    "categories": ["Culture & Heritage", "Shopping & Handicrafts"],
+    "subcategory": "Colonial Architecture",
+    "famousAttractions": ["Dutch colonial architecture", "Lighthouse", "Ramparts walk"],
+    "coordinates": [6.0258, 80.2175]
+  },
+  {
+    "id": 15,
+    "name": "Kandy",
+    "categories": ["Culture & Heritage", "Scenic Journeys & Road Trips"],
+    "subcategory": "Cultural Shows",
+    "famousAttractions": ["Temple of the Tooth", "Kandy Lake", "Cultural dances"],
+    "coordinates": [7.29, 80.63]
+  },
+  {
+    "id": 16,
+    "name": "Colombo",
+    "categories": ["City Life & Nightlife", "Shopping (Modern & Lifestyle)", "Culture & Heritage"],
+    "subcategory": "Urban Experience",
+    "famousAttractions": ["Galle Face Green", "National Museum", "Shopping districts"],
+    "coordinates": [6.93, 79.86]
+  },
+  {
+    "id": 17,
+    "name": "Arugam Bay",
+    "categories": ["Beaches & Water Sports"],
+    "subcategory": "Surfing",
+    "famousAttractions": ["World-class surf breaks", "Beach culture", "Lagoon safaris"],
+    "coordinates": [6.85, 81.8333]
+  },
+  {
+    "id": 18,
+    "name": "Weligama",
+    "categories": ["Beaches & Water Sports"],
+    "subcategory": "Surfing",
+    "famousAttractions": ["Beginner-friendly waves", "Stilt fishermen", "Beach town"],
+    "coordinates": [5.97, 80.43]
+  },
+  {
+    "id": 19,
+    "name": "Hikkaduwa",
+    "categories": ["Beaches & Water Sports"],
+    "subcategory": "Surfing / Snorkeling",
+    "famousAttractions": ["Coral reef", "Beach parties", "Marine life"],
+    "coordinates": [6.14, 80.11]
+  },
+  {
+    "id": 20,
+    "name": "Pigeon Island",
+    "categories": ["Beaches & Water Sports"],
+    "subcategory": "Snorkeling & Diving",
+    "famousAttractions": ["Marine national park", "Coral reefs", "Blue rock pigeons"],
+    "coordinates": [8.72, 81.2]
+  },
+  {
+    "id": 21,
+    "name": "Mirissa",
+    "categories": ["Beaches & Water Sports", "Cruises & Island Hopping"],
+    "subcategory": "Whale Watching",
+    "famousAttractions": ["Blue whales", "Coconut Tree Hill", "Beach relaxation"],
+    "coordinates": [5.95, 80.47]
+  },
+  {
+    "id": 22,
+    "name": "Kalpitiya",
+    "categories": ["Beaches & Water Sports", "Hidden Gems & Offbeat Trails"],
+    "subcategory": "Whale Watching / Kite Surfing",
+    "famousAttractions": ["Dolphin pods", "Kite surfing lagoon", "Pristine beaches"],
+    "coordinates": [8.23, 79.76]
+  },
+  {
+    "id": 23,
+    "name": "Bentota",
+    "categories": ["Beaches & Water Sports", "Cruises & Island Hopping"],
+    "subcategory": "Jet Ski & Parasailing",
+    "famousAttractions": ["Water sports hub", "Madu River safari", "Beach resorts"],
+    "coordinates": [6.4259, 79.9957]
+  },
+  {
+    "id": 24,
+    "name": "Negombo",
+    "categories": ["Beaches & Water Sports"],
+    "subcategory": "Jet Ski & Parasailing",
+    "famousAttractions": ["Lagoon boat rides", "Fish market", "Dutch canal"],
+    "coordinates": [7.21, 79.85]
+  },
+  {
+    "id": 25,
+    "name": "Yala National Park",
+    "categories": ["Wildlife & Safari"],
+    "subcategory": "Jeep Safaris",
+    "famousAttractions": ["Leopard sightings", "Elephants", "Diverse wildlife"],
+    "coordinates": [6.46, 81.47]
+  },
+  {
+    "id": 26,
+    "name": "Udawalawe National Park",
+    "categories": ["Wildlife & Safari"],
+    "subcategory": "Jeep Safaris / Elephant Encounters",
+    "famousAttractions": ["Elephant herds", "Bird watching", "Reservoir views"],
+    "coordinates": [6.47, 80.88]
+  },
+  {
+    "id": 27,
+    "name": "Minneriya National Park",
+    "categories": ["Wildlife & Safari"],
+    "subcategory": "Jeep Safaris",
+    "famousAttractions": ["The Gathering", "Elephant migration", "Ancient reservoir"],
+    "coordinates": [8.02, 80.84]
+  },
+  {
+    "id": 28,
+    "name": "Bundala National Park",
+    "categories": ["Wildlife & Safari"],
+    "subcategory": "Birdwatching",
+    "famousAttractions": ["Wetland sanctuary", "Migratory birds", "Flamingos"],
+    "coordinates": [6.2, 81.21]
+  },
+  {
+    "id": 29,
+    "name": "Kumana National Park",
+    "categories": ["Wildlife & Safari"],
+    "subcategory": "Birdwatching",
+    "famousAttractions": ["Bird sanctuary", "Lagoons", "Wildlife"],
+    "coordinates": [6.57, 81.67]
+  },
+  {
+    "id": 30,
+    "name": "Pinnawala Elephant Orphanage",
+    "categories": ["Wildlife & Safari"],
+    "subcategory": "Elephant Encounters",
+    "famousAttractions": ["Elephant bathing", "Feeding times", "Conservation center"],
+    "coordinates": [7.3, 80.39]
+  },
+  {
+    "id": 31,
+    "name": "Kosgoda Turtle Hatchery",
+    "categories": ["Wildlife & Safari"],
+    "subcategory": "Turtle Conservation",
+    "famousAttractions": ["Sea turtle rescue", "Hatchling releases", "Conservation education"],
+    "coordinates": [6.35, 80.02]
+  },
+  {
+    "id": 32,
+    "name": "Mannar Island",
+    "categories": ["Hidden Gems & Offbeat Trails", "Cruises & Island Hopping"],
+    "subcategory": "Island Exploration",
+    "famousAttractions": ["Baobab trees", "Adam's Bridge", "Remote beaches"],
+    "coordinates": [9.06, 79.82]
+  },
+  {
+    "id": 33,
+    "name": "Belihuloya",
+    "categories": ["Hidden Gems & Offbeat Trails"],
+    "subcategory": "Nature Escapes",
+    "famousAttractions": ["Mountain scenery", "Waterfalls", "Hiking trails"],
+    "coordinates": [6.72, 80.77]
+  },
+  {
+    "id": 34,
+    "name": "Ella",
+    "categories": ["Scenic Journeys & Road Trips", "Photography & Scenic Spots"],
+    "subcategory": "Hill Country Train Destination",
+    "famousAttractions": ["Nine Arch Bridge", "Little Adam's Peak", "Mountain views"],
+    "coordinates": [6.8667, 81.0467]
+  },
+  {
+    "id": 35,
+    "name": "Galle",
+    "categories": ["Scenic Journeys & Road Trips", "Culture & Heritage"],
+    "subcategory": "Southern Coastal Drive",
+    "famousAttractions": ["Dutch Fort", "Ramparts", "Colonial architecture"],
+    "coordinates": [6.0535, 80.221]
+  },
+  {
+    "id": 36,
+    "name": "Matara",
+    "categories": ["Scenic Journeys & Road Trips"],
+    "subcategory": "Southern Coastal Drive",
+    "famousAttractions": ["Parevi Duwa Temple", "Star Fort", "Beaches"],
+    "coordinates": [5.95, 80.55]
+  },
+  {
+    "id": 37,
+    "name": "Jaffna",
+    "categories": ["Scenic Journeys & Road Trips", "Culture & Heritage"],
+    "subcategory": "North Discovery",
+    "famousAttractions": ["Jaffna Fort", "Nallur Temple", "Tamil culture"],
+    "coordinates": [9.66, 80.01]
+  },
+  {
+    "id": 38,
+    "name": "Hatton",
+    "categories": ["Tea Country & Highlands", "Scenic Journeys & Road Trips"],
+    "subcategory": "Tea Country Road Trips",
+    "famousAttractions": ["Tea estates", "Adam's Peak base", "Castlereagh Reservoir"],
+    "coordinates": [6.9, 80.6]
+  },
+  {
+    "id": 39,
+    "name": "Lipton's Seat",
+    "categories": ["Photography & Scenic Spots", "Tea Country & Highlands"],
+    "subcategory": "Sunrise & Sunset Points",
+    "famousAttractions": ["Panoramic views", "Tea plantations", "Historic viewpoint"],
+    "coordinates": [6.78, 81.02]
+  },
+  {
+    "id": 40,
+    "name": "Ramboda Falls",
+    "categories": ["Photography & Scenic Spots"],
+    "subcategory": "Waterfalls",
+    "famousAttractions": ["Multi-tiered waterfall", "Scenic beauty", "Highway viewpoint"],
+    "coordinates": [7.05, 80.71]
+  },
+  {
+    "id": 41,
+    "name": "Gregory Lake",
+    "categories": ["Photography & Scenic Spots"],
+    "subcategory": "Lakes",
+    "famousAttractions": ["Boating", "Mountain backdrop", "Colonial-era reservoir"],
+    "coordinates": [6.96, 80.78]
+  },
+  {
+    "id": 42,
+    "name": "Nine Arch Bridge",
+    "categories": ["Photography & Scenic Spots"],
+    "subcategory": "Iconic Landmarks",
+    "famousAttractions": ["Colonial railway bridge", "Train watching", "Jungle setting"],
+    "coordinates": [6.88, 81.06]
+  },
+  {
+    "id": 43,
+    "name": "Mihintale",
+    "categories": ["Spiritual & Mindful Experiences", "Culture & Heritage"],
+    "subcategory": "Pilgrimage Trails",
+    "famousAttractions": ["Buddhism's arrival site", "Ancient monastery", "Sacred steps"],
+    "coordinates": [8.35, 80.5]
+  },
+  {
+    "id": 44,
+    "name": "Ratnapura",
+    "categories": ["Shopping & Handicrafts"],
+    "subcategory": "Gemstones & Jewelry",
+    "famousAttractions": ["Gem mines", "Gem market", "Precious stones"],
+    "coordinates": [6.71, 80.38]
+  },
+  {
+    "id": 45,
+    "name": "Ambalangoda",
+    "categories": ["Shopping & Handicrafts"],
+    "subcategory": "Wooden Masks",
+    "famousAttractions": ["Traditional mask carving", "Mask museums", "Cultural crafts"],
+    "coordinates": [6.24, 80.06]
+  },
+  {
+    "id": 46,
+    "name": "Delft Island",
+    "categories": ["Cruises & Island Hopping", "Hidden Gems & Offbeat Trails"],
+    "subcategory": "Island Visits",
+    "famousAttractions": ["Wild horses", "Coral walls", "Baobab tree"],
+    "coordinates": [9.51, 79.68]
+  },
+  {
+    "id": 47,
+    "name": "Ella Gap",
+    "categories": ["Tea Country & Highlands"],
+    "subcategory": "Viewpoints",
+    "famousAttractions": ["Mountain pass views", "Tea estates", "Valley panoramas"],
+    "coordinates": [6.87, 81.05]
+  },
+  {
+    "id": 48,
+    "name": "Marino Mall Colombo",
+    "categories": ["Shopping (Modern & Lifestyle)"],
+    "subcategory": "Shopping Malls",
+    "famousAttractions": ["Urban mall", "Fashion stores", "Dining"],
+    "coordinates": [6.9, 79.85]
+  },
+  {
+    "id": 49,
+    "name": "Barefoot Colombo",
+    "categories": ["Shopping (Modern & Lifestyle)"],
+    "subcategory": "Souvenir Stores",
+    "famousAttractions": ["Handloom textiles", "Design store", "Garden cafe"],
+    "coordinates": [6.9, 79.85]
+  },
+  {
+    "id": 50,
+    "name": "Odel Colombo",
+    "categories": ["Shopping (Modern & Lifestyle)"],
+    "subcategory": "Souvenir Stores",
+    "famousAttractions": ["Department store", "Local products", "Fashion"],
+    "coordinates": [6.92, 79.87]
+  }
 ]

@@ -11,6 +11,7 @@ const navItems = [
   { name: 'Categories', href: '/categories' },
   { name: 'Map', href: '/map' },
   { name: 'AI Recommendations', href: '/#ai-recommendations' },
+  { name: 'Plan Your Trip', href: '/plan-trip' },
 ];
 
 export default function Navbar() {

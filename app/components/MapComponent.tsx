@@ -22,8 +22,9 @@ interface LocationData {
   id: number;
   name: string;
   categories: string[];
+  subcategory?: string;
   famousAttractions: string[];
-  position?: MapPosition;
+  coordinates?: MapPosition;
 }
 interface WithCoords extends LocationData {
   coordinates: MapPosition;
@@ -31,65 +32,123 @@ interface WithCoords extends LocationData {
 
 /* ---- colours --------------------------------------------------- */
 const categoryColors: Record<string, string> = {
-  Wildlife: '#10b981',
-  'Cultural & Historical': '#f59e0b',
-  'Beach & Coastal': '#06b6d4',
-  'Adventure & Sports': '#ef4444',
-  'Nature & Scenic': '#22c55e',
-  'Religious & Spiritual': '#eab308',
+  'Adventure & Nature': '#10b981',
+  'Culture & Heritage': '#f59e0b',
+  'Beaches & Water Sports': '#06b6d4',
+  'Wildlife & Safari': '#a16207',
+  'Romance & Relaxation': '#ec4899',
+  'City Life & Nightlife': '#8b5cf6',
+  'Wellness & Retreats': '#14b8a6',
+  'Local Life & Food': '#f97316',
+  'Eco & Sustainable Travel': '#65a30d',
+  'Hidden Gems & Offbeat Trails': '#64748b',
+  'Scenic Journeys & Road Trips': '#6366f1',
+  'Photography & Scenic Spots': '#0ea5e9',
+  'Spiritual & Mindful Experiences': '#f59e0b',
+  'Shopping & Handicrafts': '#ef4444',
+  'Festivals & Events': '#d946ef',
+  'Cruises & Island Hopping': '#22d3ee',
+  'Tea Country & Highlands': '#059669',
+  'Shopping (Modern & Lifestyle)': '#7c3aed',
   Uncategorized: '#6b7280',
 };
 const getCategoryColor = (c: string) =>
   categoryColors[c] ?? categoryColors['Uncategorized'];
-
-/* ---- real coordinates (all 30) -------------------------------- */
-const coordinateMap: Record<number, MapPosition> = {
-  1: [7.1160, 79.8850], 2: [6.9271, 79.8612], 3: [7.2131, 79.8388],
-  4: [6.4220, 79.9961], 5: [6.1367, 80.1000], 6: [6.0535, 80.2210],
-  7: [5.9696, 80.4376], 8: [5.9493, 80.5471], 9: [6.0249, 80.7936],
-  10: [7.2906, 80.6337], 11: [7.2950, 80.4023], 12: [7.4880, 80.6220],
-  13: [7.9571, 80.7600], 14: [8.0469, 80.9767], 15: [8.0322, 80.8143],
-  16: [7.9333, 81.0000], 17: [8.3352, 80.4109], 18: [6.7983, 80.8030],
-  19: [6.9680, 80.7811], 20: [6.8667, 81.0466], 21: [6.3683, 81.4287],
-  22: [6.4206, 80.8860], 23: [6.8091, 80.4994], 24: [8.5874, 81.2152],
-  25: [8.6942, 81.1853], 26: [6.8413, 81.8281], 27: [9.6615, 80.0255],
-  28: [9.6053, 79.7228], 29: [8.4287, 80.0150], 30: [7.7550, 81.6050],
-};
 
 /* ---- mascot SVGs ----------------------------------------------- */
 const mascotByCategory: Record<
   string,
   { src: string; name: string; alt: string }
 > = {
-  Wildlife: {
-    src: '/assets/mascots/elephant.svg',
-    name: 'Ellie the Elephant',
-    alt: 'Elephant mascot',
+  'Adventure & Nature': {
+    src: '/assets/mascots/surfer-cat.svg',
+    name: 'Ridge the Hiker',
+    alt: 'Hiker mascot',
   },
-  'Beach & Coastal': {
+  'Beaches & Water Sports': {
     src: '/assets/mascots/turtle.svg',
     name: 'Tiko the Turtle',
     alt: 'Turtle mascot',
   },
-  'Cultural & Historical': {
+  'Culture & Heritage': {
     src: '/assets/mascots/lotus-monk.svg',
     name: 'Luma the Lotus Monk',
     alt: 'Monk mascot',
   },
-  'Adventure & Sports': {
-    src: '/assets/mascots/surfer-cat.svg',
-    name: 'Kiki the Surfer Cat',
-    alt: 'Surfer cat mascot',
+  'Wildlife & Safari': {
+    src: '/assets/mascots/elephant.svg',
+    name: 'Ellie the Elephant',
+    alt: 'Elephant mascot',
   },
-  'Nature & Scenic': {
+  'Romance & Relaxation': {
+    src: '/assets/mascots/tea-sprite.svg',
+    name: 'Rose the Romantic',
+    alt: 'Romance mascot',
+  },
+  'City Life & Nightlife': {
+    src: '/assets/mascots/lighthouse-bird.svg',
+    name: 'Neon the Night Owl',
+    alt: 'Nightlife mascot',
+  },
+  'Wellness & Retreats': {
+    src: '/assets/mascots/lotus-monk.svg',
+    name: 'Seren the Sage',
+    alt: 'Wellness mascot',
+  },
+  'Local Life & Food': {
+    src: '/assets/mascots/tea-sprite.svg',
+    name: 'Spice the Chef',
+    alt: 'Food mascot',
+  },
+  'Eco & Sustainable Travel': {
+    src: '/assets/mascots/leaf-fairy.svg',
+    name: 'Eco the Guardian',
+    alt: 'Eco mascot',
+  },
+  'Hidden Gems & Offbeat Trails': {
+    src: '/assets/mascots/compass-gnome.svg',
+    name: 'Rover the Scout',
+    alt: 'Scout mascot',
+  },
+  'Scenic Journeys & Road Trips': {
+    src: '/assets/mascots/train-sprite.svg',
+    name: 'Rail the Rider',
+    alt: 'Train mascot',
+  },
+  'Photography & Scenic Spots': {
+    src: '/assets/mascots/camera-bird.svg',
+    name: 'Snap the Heron',
+    alt: 'Camera mascot',
+  },
+  'Spiritual & Mindful Experiences': {
+    src: '/assets/mascots/lotus-monk.svg',
+    name: 'Luma the Lotus Monk',
+    alt: 'Monk mascot',
+  },
+  'Shopping & Handicrafts': {
+    src: '/assets/mascots/gem-fox.svg',
+    name: 'Gem the Curator',
+    alt: 'Gem mascot',
+  },
+  'Festivals & Events': {
+    src: '/assets/mascots/firework-cat.svg',
+    name: 'Fira the Firework',
+    alt: 'Festival mascot',
+  },
+  'Cruises & Island Hopping': {
+    src: '/assets/mascots/boat-fish.svg',
+    name: 'Marin the Sailor',
+    alt: 'Boat mascot',
+  },
+  'Tea Country & Highlands': {
     src: '/assets/mascots/tea-sprite.svg',
     name: 'Chai the Tea Sprite',
     alt: 'Tea sprite mascot',
   },
-  'Religious & Spiritual': {
-    src: '/assets/mascots/lotus-monk.svg',
-    name: 'Luma the Lotus Monk',
-    alt: 'Monk mascot',
+  'Shopping (Modern & Lifestyle)': {
+    src: '/assets/mascots/bag-bird.svg',
+    name: 'Moda the Shopper',
+    alt: 'Shopping mascot',
   },
   Uncategorized: {
     src: '/assets/mascots/lighthouse-bird.svg',
@@ -102,12 +161,39 @@ const mascotByCategory: Record<
 /* 2. Map Controllers (Fix react-leaflet v4+)                      */
 /* --------------------------------------------------------------- */
 
-// Set center and zoom
-const MapController: React.FC<{ center: LatLngTuple }> = ({ center }) => {
+// Fit the map to show the whole country with improved zoom
+const MapController: React.FC<{ center: LatLngTuple; coords: LatLngTuple[] }> = ({ center, coords }) => {
   const map = useMap();
   useEffect(() => {
-    map.setView(center, 8);
-  }, [map, center]);
+    if (!map) return;
+
+    try {
+      if (coords.length > 0) {
+        // Fit bounds to show the whole country with better padding for clarity
+        map.fitBounds(coords, { padding: [50, 50], maxZoom: 8 });
+      } else {
+        // Fallback to center/zoom with better default zoom level
+        map.setView(center, 7.5);
+      }
+    } catch (e) {
+      // If fitBounds fails for any reason, fallback
+      try {
+        map.setView(center, 7.5);
+      } catch {}
+    }
+
+    // Ensure the map redraws correctly on container resize (mobile rotate/resize)
+    const onResize = () => {
+      try {
+        map.invalidateSize();
+        if (coords.length > 0) map.fitBounds(coords, { padding: [50, 50], maxZoom: 8 });
+      } catch {}
+    };
+
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, [map, center, coords]);
+
   return null;
 };
 
@@ -115,16 +201,40 @@ const MapController: React.FC<{ center: LatLngTuple }> = ({ center }) => {
 const MapInteractionsController: React.FC = () => {
   const map = useMap();
   useEffect(() => {
-    if (!map) return;
+    if (!map || typeof window === 'undefined') return;
 
-    map.dragging.disable();
-    map.touchZoom.disable();
-    map.doubleClickZoom.disable();
-    map.scrollWheelZoom.disable();
-    map.boxZoom.disable();
-    map.keyboard.disable();
-    if (map.zoomControl) map.zoomControl.remove();
+    // Make the map more usable on small screens (enable touch & dragging)
+    const setInteractionsForWidth = (width: number) => {
+      const isSmall = width < 768; // mobile & small tablets
+      try {
+        if (isSmall) {
+          map.dragging.enable();
+          map.touchZoom.enable();
+          map.doubleClickZoom.enable();
+          // keep scrollWheelZoom off to avoid accidental zoom while scrolling page
+          map.scrollWheelZoom.disable();
+          map.boxZoom.disable();
+          map.keyboard.disable();
+        } else {
+          // Desktop: keep the map mostly static so it doesn't interfere with page scroll
+          map.dragging.disable();
+          map.touchZoom.disable();
+          map.doubleClickZoom.disable();
+          map.scrollWheelZoom.disable();
+          map.boxZoom.disable();
+          map.keyboard.disable();
+          if (map.zoomControl) map.zoomControl.remove();
+        }
+      } catch (e) {
+        // Some map methods can throw if layer/control not present; ignore safely
+      }
+    };
 
+    setInteractionsForWidth(window.innerWidth);
+
+    const onResize = () => setInteractionsForWidth(window.innerWidth);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
   }, [map]);
   return null;
 };
@@ -152,18 +262,18 @@ export default function MapComponent() {
         if (!active) return;
         setLocations([
           {
-            id: 2,
+            id: 16,
             name: 'Colombo',
-            categories: ['Cultural & Historical', 'Beach & Coastal'],
-            famousAttractions: ['Galle Face Green'],
-            position: coordinateMap[2],
+            categories: ['City Life & Nightlife', 'Shopping (Modern & Lifestyle)'],
+            famousAttractions: ['Galle Face Green', 'National Museum'],
+            coordinates: [6.93, 79.86],
           },
           {
-            id: 6,
-            name: 'Galle',
-            categories: ['Cultural & Historical', 'Beach & Coastal'],
-            famousAttractions: ['Galle Fort'],
-            position: coordinateMap[6],
+            id: 14,
+            name: 'Galle Fort',
+            categories: ['Culture & Heritage'],
+            famousAttractions: ['Dutch colonial architecture', 'Lighthouse'],
+            coordinates: [6.0258, 80.2175],
           },
         ]);
       });
@@ -172,22 +282,18 @@ export default function MapComponent() {
     };
   }, []);
 
-  /* ---- merge coordinates + filter (SAFE) --------------------- */
+  /* ---- filter locations (coordinates already in JSON) -------- */
   const withCoords: WithCoords[] = useMemo(() => {
     const merged = locations
-      .map(l => {
-        const c = coordinateMap[l.id];
-        if (
-          Array.isArray(c) &&
-          c.length === 2 &&
-          typeof c[0] === 'number' &&
-          typeof c[1] === 'number'
-        ) {
-          return { ...l, coordinates: c as MapPosition };
-        }
-        return null;
-      })
-      .filter((l): l is WithCoords => l !== null);
+      .filter((l): l is WithCoords => {
+        return (
+          l.coordinates &&
+          Array.isArray(l.coordinates) &&
+          l.coordinates.length === 2 &&
+          typeof l.coordinates[0] === 'number' &&
+          typeof l.coordinates[1] === 'number'
+        );
+      });
 
     return merged.filter(
       m => filter[m.categories?.[0] ?? 'Uncategorized'] !== false
@@ -246,35 +352,30 @@ export default function MapComponent() {
     return () => document.removeEventListener('keydown', handler);
   }, [selected]);
 
-  /* ---- custom mascot icon (ring + SVG) ----------------------- */
-  const createMascotIcon = (loc: WithCoords, hovered: boolean) => {
-    const cat = loc.categories?.[0] ?? 'Uncategorized';
-    const colour = getCategoryColor(cat);
-    const mascot = mascotByCategory[cat] ?? mascotByCategory['Uncategorized'];
+/* ---- custom category dot icon (no SVG) --------------------- */
+const createMascotIcon = (loc: WithCoords, hovered: boolean) => {
+  const cat = loc.categories?.[0] ?? 'Uncategorized';
+  const colour = getCategoryColor(cat);
 
-    const size = hovered ? 48 : 36;
-    const ringR = hovered ? 22 : 16;
-    const imgSize = hovered ? 28 : 22;
+  const size = hovered ? 18 : 14; // small solid dot
+  const border = hovered ? 6 : 4; // ring thickness
 
-    const html = `
-      <div style="position:relative;width:${size}px;height:${size}px;" data-loc-id="${loc.id}">
-        <svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
-          <circle cx="${size / 2}" cy="${size / 2}" r="${ringR}"
-                  fill="none" stroke="${colour}" stroke-width="3"/>
-        </svg>
-        <img src="${mascot.src}" alt="${mascot.alt}"
-             style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-                    width:${imgSize}px;height:${imgSize}px;pointer-events:none;"/>
-      </div>
-    `;
+  const html = `
+    <div style="position:relative;width:${size + border * 2}px;height:${size + border * 2}px;">
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:${size + border * 2}px;height:${size + border * 2}px;border-radius:9999px;background:rgba(0,0,0,0.08);"></div>
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:${size + border}px;height:${size + border}px;border-radius:9999px;border:${border}px solid ${colour};background:white;"></div>
+      <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:${size}px;height:${size}px;border-radius:9999px;background:${colour};box-shadow:0 2px 6px rgba(0,0,0,0.15);"></div>
+    </div>
+  `;
 
-    return divIcon({
-      html,
-      className: 'custom-mascot-marker',
-      iconSize: [size, size],
-      iconAnchor: [size / 2, size / 2],
-    });
-  };
+  const total = size + border * 2;
+  return divIcon({
+    html,
+    className: 'custom-category-dot',
+    iconSize: [total, total],
+    iconAnchor: [total / 2, total / 2],
+  });
+};
 
   /* --------------------------------------------------------------- */
   /* 4. Render                                                       */
@@ -308,10 +409,9 @@ export default function MapComponent() {
         <div className="flex flex-col items-center gap-8">
 
           {/* MAP (react-leaflet v4+ compliant) */}
-          <div className="relative w-[800px] h-[800px] mx-auto rounded-3xl shadow-2xl border border-gray-200 overflow-hidden bg-white/90 backdrop-blur-sm ring-4 ring-emerald-500/10">
+          <div className="relative w-full max-w-4xl h-[55vh] sm:h-[60vh] md:h-[80vh] mx-auto rounded-3xl shadow-2xl border border-gray-200 overflow-hidden bg-white/90 backdrop-blur-sm ring-4 ring-emerald-500/10">
             <MapContainer
               style={{ height: '100%', width: '100%' }}
-              // No interaction props allowed
             >
               <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -320,7 +420,10 @@ export default function MapComponent() {
               />
 
               {/* Set center and zoom */}
-              <MapController center={mapCenter} />
+              <MapController 
+                center={mapCenter} 
+                coords={withCoords.map(l => l.coordinates)}
+              />
 
               {/* Disable all interactions */}
               <MapInteractionsController />
@@ -339,33 +442,37 @@ export default function MapComponent() {
                       mouseout: () => setHoveredId(null),
                     }}
                   >
-                    {hovered && (
-                      <Tooltip direction="top" offset={[0, -10]} opacity={1} permanent>
-                        <div className="p-1">
-                          <div className="flex items-center gap-2">
-                            <Mascot
-                              name={mascotByCategory[loc.categories?.[0] ?? 'Uncategorized'].name}
-                              src={mascotByCategory[loc.categories?.[0] ?? 'Uncategorized'].src}
-                              size={22}
-                              animation="idle-float"
-                              decorative
-                            />
-                            <span className="text-sm font-medium text-gray-900">
-                              {loc.name}
-                            </span>
-                          </div>
-                          <div className="mt-1 text-[11px] text-gray-600">
-                            Categories: {loc.categories?.join(', ') ?? 'TBD'}
-                          </div>
-                          {loc.famousAttractions?.slice(0, 3).length ? (
-                            <div className="mt-1 text-[11px] text-gray-600">
-                              Highlights:{' '}
-                              {loc.famousAttractions!.slice(0, 3).join(', ')}
+                    {hovered && (() => {
+                      const cat = loc.categories?.[0] ?? 'Uncategorized';
+                      const mascot = mascotByCategory[cat] ?? mascotByCategory['Uncategorized'];
+                      return (
+                        <Tooltip direction="top" offset={[0, -10]} opacity={1} permanent>
+                          <div className="p-1">
+                            <div className="flex items-center gap-2">
+                              <Mascot
+                                name={mascot.name}
+                                src={mascot.src}
+                                size={22}
+                                animation="idle-float"
+                                decorative
+                              />
+                              <span className="text-sm font-medium text-gray-900">
+                                {loc.name}
+                              </span>
                             </div>
-                          ) : null}
-                        </div>
-                      </Tooltip>
-                    )}
+                            <div className="mt-1 text-[11px] text-gray-600">
+                              Categories: {loc.categories?.join(', ') ?? 'TBD'}
+                            </div>
+                            {loc.famousAttractions?.slice(0, 3).length ? (
+                              <div className="mt-1 text-[11px] text-gray-600">
+                                Highlights:{' '}
+                                {loc.famousAttractions!.slice(0, 3).join(', ')}
+                              </div>
+                            ) : null}
+                          </div>
+                        </Tooltip>
+                      );
+                    })()}
                   </Marker>
                 );
               })}
@@ -379,7 +486,7 @@ export default function MapComponent() {
           </div>
 
           {/* LEGEND / FILTERS */}
-          <div className="w-[800px] bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
+          <div className="w-full max-w-4xl bg-white rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-200">
             <div className="text-lg font-medium text-gray-900 mb-4">Categories</div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {Object.keys(categoryColors)

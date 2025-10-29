@@ -1,0 +1,211 @@
+[
+  {
+    "location": "Ella",
+    "category": "Adventure & Nature",
+    "emoji": "🌿",
+    "hotels": [
+      { "name": "98 Acres Resort & Spa", "rating": 5, "type": "Boutique", "image": "/images/hotels/ella-98-acres.jpg" },
+      { "name": "EKHO Ella", "rating": 4, "type": "Resort", "image": "/images/hotels/ella-ekho.jpg" },
+      { "name": "Mountain Heavens", "rating": 4, "type": "Hotel", "image": "/images/hotels/ella-mountain.jpg" },
+      { "name": "Morning Dew Boutique Hotel", "rating": 4, "type": "Boutique", "image": "/images/hotels/ella-morning-dew.jpg" }
+    ]
+  },
+  {
+    "location": "Knuckles",
+    "category": "Adventure & Nature",
+    "emoji": "🌿",
+    "hotels": [
+      { "name": "Santani Wellness Resort & Spa", "rating": 5, "type": "Luxury/Wellness", "image": "/images/hotels/knuckles-santani.jpg" },
+      { "name": "Madulkelle Tea and Eco Lodge", "rating": 4, "type": "Eco", "image": "/images/hotels/knuckles-madulkelle.jpg" },
+      { "name": "Sir John's Bungalow", "rating": 3, "type": "Bungalow", "image": "/images/hotels/knuckles-sirjohn.jpg" },
+      { "name": "Wild Glamping Knuckles", "rating": 4, "type": "Eco-lodge", "image": "/images/hotels/knuckles-glamping.jpg" }
+    ]
+  },
+  {
+    "location": "Adam's Peak (Dalhousie)",
+    "category": "Adventure & Nature",
+    "emoji": "🌿",
+    "hotels": [
+      { "name": "Delhousie Hotel", "rating": 4, "type": "Hotel", "image": "/images/hotels/adams-delhousie.jpg" },
+      { "name": "Grand Adam's Peak", "rating": 3, "type": "Guesthouse", "image": "/images/hotels/adams-grand.jpg" },
+      { "name": "Slightly Chilled Hotel", "rating": 3, "type": "Mid-range", "image": "/images/hotels/adams-chilled.jpg" },
+      { "name": "Wathsala Inn", "rating": 3, "type": "Guesthouse", "image": "/images/hotels/adams-wathsala.jpg" }
+    ]
+  },
+  {
+    "location": "Kitulgala",
+    "category": "Adventure & Nature",
+    "emoji": "🌿",
+    "hotels": [
+      { "name": "Moksha at Kitulgala", "rating": 5, "type": "Boutique", "image": "/images/hotels/kitulgala-moksha.jpg" },
+      { "name": "Palmstone Retreat", "rating": 5, "type": "Luxury Boutique", "image": "/images/hotels/kitulgala-palmstone.jpg" },
+      { "name": "Plantation Hotel", "rating": 3, "type": "Hotel", "image": "/images/hotels/kitulgala-plantation.jpg" },
+      { "name": "Kitulgala Rest House", "rating": 3, "type": "Rest House", "image": "/images/hotels/kitulgala-resthouse.jpg" }
+    ]
+  },
+  {
+    "location": "Sigiriya",
+    "category": "Culture & Heritage",
+    "emoji": "🏛️",
+    "hotels": [
+      { "name": "Water Garden Sigiriya", "rating": 5, "type": "Boutique", "image": "/images/hotels/sigiriya-watergarden.jpg" },
+      { "name": "Jetwing Vil Uyana", "rating": 5, "type": "Luxury Eco", "image": "/images/hotels/sigiriya-viluyana.jpg" },
+      { "name": "Aliya Resort & Spa", "rating": 5, "type": "Resort", "image": "/images/hotels/sigiriya-aliya.jpg" },
+      { "name": "Hotel Sigiriya", "rating": 4, "type": "Hotel", "image": "/images/hotels/sigiriya-hotel.jpg" }
+    ]
+  },
+  {
+    "location": "Nuwara Eliya",
+    "category": "Tea Country & Highlands",
+    "emoji": "☕",
+    "hotels": [
+      { "name": "Heritance Tea Factory", "rating": 5, "type": "Themed", "image": "/images/hotels/nuwara-heritance.jpg" },
+      { "name": "The Grand Hotel", "rating": 5, "type": "Heritage", "image": "/images/hotels/nuwara-grand.jpg" },
+      { "name": "Jetwing St. Andrew's", "rating": 4, "type": "Heritage", "image": "/images/hotels/nuwara-standrews.jpg" },
+      { "name": "The Hill Club", "rating": 4, "type": "Heritage", "image": "/images/hotels/nuwara-hillclub.jpg" }
+    ]
+  },
+  {
+    "location": "Haputale",
+    "category": "Tea Country & Highlands",
+    "emoji": "☕",
+    "hotels": [
+      { "name": "Thotalagala", "rating": 5, "type": "Luxury Boutique", "image": "/images/hotels/haputale-thotalagala.jpg" },
+      { "name": "Melheim Kanda", "rating": 4, "type": "Hotel", "image": "/images/hotels/haputale-melheim.jpg" },
+      { "name": "Dream Cliff Mountain Resort", "rating": 4, "type": "Resort", "image": "/images/hotels/haputale-dreamcliff.jpg" },
+      { "name": "Olympus Plaza Hotel", "rating": 3, "type": "Hotel", "image": "/images/hotels/haputale-olympus.jpg" }
+    ]
+  },
+  {
+    "location": "Anuradhapura",
+    "category": "Culture & Heritage",
+    "emoji": "🏛️",
+    "hotels": [
+      { "name": "Uga Ulagalla", "rating": 5, "type": "Boutique", "image": "/images/hotels/anuradhapura-ulagalla.jpg" },
+      { "name": "Heritage Hotel", "rating": 4, "type": "Hotel", "image": "/images/hotels/anuradhapura-heritage.jpg" },
+      { "name": "Rajarata Hotel", "rating": 3, "type": "Hotel", "image": "/images/hotels/anuradhapura-rajarata.jpg" },
+      { "name": "Aryana Boutique Hotel", "rating": 4, "type": "Boutique", "image": "/images/hotels/anuradhapura-aryana.jpg" }
+    ]
+  },
+  {
+    "location": "Polonnaruwa",
+    "category": "Culture & Heritage",
+    "emoji": "🏛️",
+    "hotels": [
+      { "name": "EKHO Lake House", "rating": 4, "type": "Resort", "image": "/images/hotels/polonnaruwa-ekho.jpg" },
+      { "name": "The Deer Park Hotel", "rating": 5, "type": "Hotel", "image": "/images/hotels/polonnaruwa-deerpark.jpg" },
+      { "name": "Ruins Chaaya Hotel", "rating": 3, "type": "Hotel", "image": "/images/hotels/polonnaruwa-ruins.jpg" },
+      { "name": "Giritale Hotel", "rating": 3, "type": "Hotel", "image": "/images/hotels/polonnaruwa-giritale.jpg" }
+    ]
+  },
+  {
+    "location": "Galle Fort",
+    "category": "Culture & Heritage",
+    "emoji": "🏛️",
+    "hotels": [
+      { "name": "Amangalla", "rating": 5, "type": "Luxury Boutique", "image": "/images/hotels/galle-amangalla.jpg" },
+      { "name": "Galle Fort Hotel", "rating": 4, "type": "Boutique", "image": "/images/hotels/galle-fort-hotel.jpg" },
+      { "name": "The Fort Printers", "rating": 4, "type": "Boutique", "image": "/images/hotels/galle-fortprinters.jpg" },
+      { "name": "Yara Galle Fort", "rating": 3, "type": "Boutique", "image": "/images/hotels/galle-yara.jpg" }
+    ]
+  },
+  {
+    "location": "Kandy",
+    "category": "Culture & Heritage",
+    "emoji": "🏛️",
+    "hotels": [
+      { "name": "Earl's Regency", "rating": 5, "type": "Resort", "image": "/images/hotels/kandy-earls.jpg" },
+      { "name": "The Golden Crown Hotel", "rating": 5, "type": "Hotel", "image": "/images/hotels/kandy-goldencrown.jpg" },
+      { "name": "The Radh", "rating": 4, "type": "Boutique", "image": "/images/hotels/kandy-radh.jpg" },
+      { "name": "Queen's Hotel", "rating": 4, "type": "Heritage", "image": "/images/hotels/kandy-queens.jpg" }
+    ]
+  },
+  {
+    "location": "Colombo",
+    "category": "City Life & Nightlife",
+    "emoji": "🌆",
+    "hotels": [
+      { "name": "Shangri-La Colombo", "rating": 5, "type": "Luxury", "image": "/images/hotels/colombo-shangrila.jpg" },
+      { "name": "Cinnamon Grand", "rating": 5, "type": "Hotel", "image": "/images/hotels/colombo-cinnamon.jpg" },
+      { "name": "Galle Face Hotel", "rating": 5, "type": "Heritage", "image": "/images/hotels/colombo-galleface.jpg" },
+      { "name": "Jetwing Colombo Seven", "rating": 4, "type": "Hotel", "image": "/images/hotels/colombo-jetwing.jpg" }
+    ]
+  },
+  {
+    "location": "Arugam Bay",
+    "category": "Beaches & Water Sports",
+    "emoji": "🌊",
+    "hotels": [
+      { "name": "Jetwing Surf", "rating": 5, "type": "Eco", "image": "/images/hotels/arugambay-surf.jpg" },
+      { "name": "Kottukal Beach House", "rating": 5, "type": "Boutique", "image": "/images/hotels/arugambay-kottukal.jpg" },
+      { "name": "The Blue Wave Hotel", "rating": 4, "type": "Hotel", "image": "/images/hotels/arugambay-bluewave.jpg" },
+      { "name": "Arugam Bay Roccos", "rating": 3, "type": "Guesthouse", "image": "/images/hotels/arugambay-roccos.jpg" }
+    ]
+  },
+  {
+    "location": "Weligama",
+    "category": "Beaches & Water Sports",
+    "emoji": "🌊",
+    "hotels": [
+      { "name": "Cape Weligama", "rating": 5, "type": "Relais & Chateaux", "image": "/images/hotels/weligama-cape.jpg" },
+      { "name": "Weligama Bay Marriott Resort & Spa", "rating": 5, "type": "Resort", "image": "/images/hotels/weligama-marriott.jpg" },
+      { "name": "Eraeliya Villas & Gardens", "rating": 4, "type": "Boutique", "image": "/images/hotels/weligama-eraeliya.jpg" },
+      { "name": "Mandara Resort", "rating": 4, "type": "Resort", "image": "/images/hotels/weligama-mandara.jpg" }
+    ]
+  },
+  {
+    "location": "Hikkaduwa",
+    "category": "Beaches & Water Sports",
+    "emoji": "🌊",
+    "hotels": [
+      { "name": "Riff Hikkaduwa", "rating": 5, "type": "Resort", "image": "/images/hotels/hikkaduwa-riff.jpg" },
+      { "name": "Hikka Tranz by Cinnamon", "rating": 4, "type": "Resort", "image": "/images/hotels/hikkaduwa-tranz.jpg" },
+      { "name": "Coral Sands Hotel", "rating": 3, "type": "Hotel", "image": "/images/hotels/hikkaduwa-coralsands.jpg" },
+      { "name": "Aditya Resort", "rating": 5, "type": "Boutique", "image": "/images/hotels/hikkaduwa-aditya.jpg" }
+    ]
+  },
+  {
+    "location": "Mirissa",
+    "category": "Beaches & Water Sports",
+    "emoji": "🌊",
+    "hotels": [
+      { "name": "Cape Weligama", "rating": 5, "type": "Relais & Chateaux", "image": "/images/hotels/mirissa-cape.jpg" },
+      { "name": "Sri Sharavi Beach Villas & Spa", "rating": 5, "type": "Boutique", "image": "/images/hotels/mirissa-sharavi.jpg" },
+      { "name": "Mandara Resort Mirissa", "rating": 4, "type": "Resort", "image": "/images/hotels/mirissa-mandara.jpg" },
+      { "name": "Paradise Beach Club", "rating": 4, "type": "Resort", "image": "/images/hotels/mirissa-paradise.jpg" }
+    ]
+  },
+  {
+    "location": "Yala (Tissamaharama)",
+    "category": "Wildlife & Safari",
+    "emoji": "🐘",
+    "hotels": [
+      { "name": "Wild Coast Tented Lodge", "rating": 5, "type": "Luxury Tented", "image": "/images/hotels/yala-wildcoast.jpg" },
+      { "name": "Cinnamon Wild Yala", "rating": 4, "type": "Resort", "image": "/images/hotels/yala-cinnamon.jpg" },
+      { "name": "Jetwing Yala", "rating": 5, "type": "Resort", "image": "/images/hotels/yala-jetwing.jpg" },
+      { "name": "Uga Chena Huts", "rating": 5, "type": "Luxury Cabins", "image": "/images/hotels/yala-chena.jpg" }
+    ]
+  },
+  {
+    "location": "Udawalawe",
+    "category": "Wildlife & Safari",
+    "emoji": "🐘",
+    "hotels": [
+      { "name": "Grand Udawalawe Safari Resort", "rating": 5, "type": "Resort", "image": "/images/hotels/udawalawe-grand.jpg" },
+      { "name": "Centauria Wild Resort", "rating": 4, "type": "Resort", "image": "/images/hotels/udawalawe-centauria.jpg" },
+      { "name": "Kalu's Hideaway", "rating": 3, "type": "Lodge", "image": "/images/hotels/udawalawe-kalu.jpg" },
+      { "name": "Athgira River Camp", "rating": 4, "type": "Tented Camp", "image": "/images/hotels/udawalawe-athgira.jpg" }
+    ]
+  },
+  {
+    "location": "Minneriya (Habarana)",
+    "category": "Wildlife & Safari",
+    "emoji": "🐘",
+    "hotels": [
+      { "name": "Cinnamon Lodge Habarana", "rating": 5, "type": "Resort", "image": "/images/hotels/minneriya-cinnamon.jpg" },
+      { "name": "Habarana Village by Cinnamon", "rating": 4, "type": "Resort", "image": "/images/hotels/minneriya-village.jpg" },
+      { "name": "Gabaa Resort & Spa", "rating": 3, "type": "Resort", "image": "/images/hotels/minneriya-gabaa.jpg" },
+      { "name": "Sevanagama Villa", "rating": 3, "type": "Villa", "image": "/images/hotels/minneriya-sevanagama.jpg" }
+    ]
+  }
+]

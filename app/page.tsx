@@ -5,6 +5,7 @@ import HeroSection from '@/app/components/HeroSection';
 import CategoriesSection from '@/app/components/CategoriesSection';
 import InteractiveMap from '@/app/components/InteractiveMap';
 import AIRecommendations from '@/app/components/AIRecommendations';
+import ReviewsSection from '@/app/components/ReviewsSection';
 import Footer from '@/app/components/Footer';
 
 export default function HomePage() {
@@ -24,6 +25,9 @@ export default function HomePage() {
       
       {/* AI Recommendations */}
       <AIRecommendations />
+
+       {/* Reviews Recommendations */}
+      <ReviewsSection />         
       
       {/* Footer */}
       <Footer />

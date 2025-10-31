@@ -141,11 +141,10 @@ export default function DestinationsPage() {
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                     className="bg-white rounded-3xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 overflow-hidden group"
                   >
-                    {/* Destination Image Placeholder */}
-                    <div className="h-64 bg-gradient-to-br from-emerald-100 to-blue-100 relative overflow-hidden">
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <Icon icon="mdi:image-area" className="text-6xl text-emerald-300" />
-                      </div>
+                    {/* Destination Image */}
+                    <div className="h-64 relative overflow-hidden bg-gray-100">
+                      <img src={destination.imageUrl} alt={destination.name} className="w-full h-full object-cover" />
+                      <div className="absolute inset-0 bg-black/12" />
                       <div className="absolute top-4 right-4">
                         <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-emerald-600 text-sm font-medium rounded-full">
                           <span data-editor-id={`app/destinations/page.tsx:127:27:${destination.id}`}>

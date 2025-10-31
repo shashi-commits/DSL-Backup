@@ -116,10 +116,8 @@ export default async function DestinationDetail({ params }: { params: Promise<{ 
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {[0,1,2,3,4,5].map((i) => (
-                  <div key={i} className="relative aspect-[16/10] rounded-2xl bg-gradient-to-br from-emerald-100 to-blue-100 border border-gray-100 overflow-hidden">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span data-editor-id={`app/destinations/[id]/page.tsx:135:23:${i}`} className="text-gray-500 text-sm">Photo coming soon</span>
-                    </div>
+                  <div key={i} className="relative aspect-[16/10] rounded-2xl bg-gray-100 border border-gray-100 overflow-hidden">
+                    <img src={destination.imageUrl} alt={`${destination.name} photo ${i+1}`} className="w-full h-full object-cover" />
                   </div>
                 ))}
               </div>

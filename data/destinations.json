@@ -11,7 +11,7 @@
       "nearbyAttractions": ["Galle Fort", "Unawatuna Beach", "Jungle Beach", "Japanese Peace Pagoda"],
       "bestTimeToVisit": "December to March",
       "activities": ["Historical tours", "Beach activities", "Shopping", "Photography"],
-      "imageUrl": "https://example.com/galle.jpg"
+       "imageUrl": "/galle-forts.jpg"
     },
     {
       "id": "polonnaruwa",
@@ -24,7 +24,7 @@
       "nearbyAttractions": ["Royal Palace", "Gal Vihara", "Parakrama Samudra", "Minneriya National Park"],
       "bestTimeToVisit": "May to September",
       "activities": ["Archaeological tours", "Wildlife safaris", "Cycling", "Photography"],
-      "imageUrl": "https://example.com/polonnaruwa.jpg"
+      "imageUrl": "/polonnaruwa.jpg"
     },
     {
       "id": "yala",
@@ -37,7 +37,7 @@
       "nearbyAttractions": ["Yala National Park", "Kataragama Temple", "Sithulpawwa Rock Temple", "Bundala National Park"],
       "bestTimeToVisit": "February to July",
       "activities": ["Wildlife safaris", "Bird watching", "Photography", "Nature walks"],
-      "imageUrl": "https://example.com/yala.jpg"
+      "imageUrl": "/Yala.avif"
     },
     {
       "id": "bentota",
@@ -50,7 +50,7 @@
       "nearbyAttractions": ["Bentota Beach", "Madu River", "Brief Garden", "Kosgoda Turtle Hatchery"],
       "bestTimeToVisit": "December to March",
       "activities": ["Water sports", "Boat tours", "Turtle watching", "Ayurveda treatments"],
-      "imageUrl": "https://example.com/bentota.jpg"
+      "imageUrl": "/bentota.jpg"
     },
     {
       "id": "kandy",
@@ -63,7 +63,7 @@
       "nearbyAttractions": ["Temple of the Tooth", "Royal Botanical Gardens", "Kandy Lake", "Udawattakele Forest"],
       "bestTimeToVisit": "December to April",
       "activities": ["Cultural tours", "Temple visits", "Botanical gardens", "Traditional performances"],
-      "imageUrl": "https://example.com/kandy.jpg"
+      "imageUrl": "kandy.jpg"
     },
     {
       "id": "ella",
@@ -76,7 +76,7 @@
       "nearbyAttractions": ["Ella Rock", "Nine Arch Bridge", "Little Adam's Peak", "Ravana Falls"],
       "bestTimeToVisit": "December to March",
       "activities": ["Hiking", "Train rides", "Photography", "Tea plantation tours"],
-      "imageUrl": "https://example.com/ella.jpg"
+      "imageUrl": "ella.jpg"
     },
     {
       "id": "anuradhapura",
@@ -89,7 +89,7 @@
       "nearbyAttractions": ["Sri Maha Bodhi", "Ruwanwelisaya", "Jetavanaramaya", "Abhayagiri Monastery"],
       "bestTimeToVisit": "December to March",
       "activities": ["Archaeological tours", "Pilgrimage", "Cycling", "Historical exploration"],
-      "imageUrl": "https://example.com/anuradhapura.jpg"
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Ruwanwelisaya_Stupa_-_Anuradhapura_-_Sri_Lanka.jpg"
     },
     {
       "id": "sigiriya",
@@ -102,7 +102,7 @@
       "nearbyAttractions": ["Lion Rock", "Sigiriya Museum", "Pidurangala Rock", "Dambulla Cave Temple"],
       "bestTimeToVisit": "December to March",
       "activities": ["Rock climbing", "Historical tours", "Photography", "Sunrise viewpoints"],
-      "imageUrl": "https://example.com/sigiriya.jpg"
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Sigiriya_Rock_Sri_Lanka.jpg"
     },
     {
       "id": "mirissa",
@@ -115,7 +115,7 @@
       "nearbyAttractions": ["Mirissa Beach", "Coconut Tree Hill", "Snake Island", "Weligama Bay"],
       "bestTimeToVisit": "December to April",
       "activities": ["Whale watching", "Surfing", "Beach relaxation", "Snorkeling"],
-      "imageUrl": "https://example.com/mirissa.jpg"
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Mirissa_Beach_Sri_Lanka.jpg"
     },
     {
       "id": "nuwara-eliya",
@@ -128,7 +128,7 @@
       "nearbyAttractions": ["Horton Plains", "Gregory Lake", "Hakgala Botanical Gardens", "Pedro Tea Estate"],
       "bestTimeToVisit": "December to March",
       "activities": ["Tea plantation tours", "Hiking", "Boating", "Golf"],
-      "imageUrl": "https://example.com/nuwara-eliya.jpg"
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Tea_Plantation_in_Nuwara_Eliya.jpg"
     },
     {
       "id": "adam-peak",
@@ -141,7 +141,7 @@
       "nearbyAttractions": ["Sri Pada Temple", "Dalhousie", "Maskeliya Reservoir", "Norton Bridge"],
       "bestTimeToVisit": "December to May",
       "activities": ["Pilgrimage hiking", "Sunrise viewing", "Photography", "Meditation"],
-      "imageUrl": "https://example.com/adam-peak.jpg"
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Adam%27s_Peak_-_Sri_Lanka.jpg"
     },
     {
       "id": "kosgoda",
@@ -154,7 +154,7 @@
       "nearbyAttractions": ["Kosgoda Turtle Hatchery", "Kosgoda Beach", "Madu River", "Balapitiya"],
       "bestTimeToVisit": "November to April",
       "activities": ["Turtle watching", "Conservation tours", "Beach walks", "Boat safaris"],
-      "imageUrl": "https://example.com/kosgoda.jpg"
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Kosgoda_Turtle_Hatchery_-_Sri_Lanka.jpg"
     }
   ],
   "categories": [

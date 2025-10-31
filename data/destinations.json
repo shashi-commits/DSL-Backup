@@ -37,7 +37,7 @@
       "nearbyAttractions": ["Yala National Park", "Kataragama Temple", "Sithulpawwa Rock Temple", "Bundala National Park"],
       "bestTimeToVisit": "February to July",
       "activities": ["Wildlife safaris", "Bird watching", "Photography", "Nature walks"],
-      "imageUrl": "/Yala.avif"
+      "imageUrl": "/yala.avif"
     },
     {
       "id": "bentota",
